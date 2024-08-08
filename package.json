@@ -2,7 +2,7 @@
   "homepage": ".",
   "name": "r2s-composites",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
