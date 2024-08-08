@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Routes, Route} from "react-router-dom";
 import Navbar from './Navbar';
-import HomePage from './routes/homepage';
+import Home from './routes/Home';
 import About from './routes/About';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
       <header className="App-header">
