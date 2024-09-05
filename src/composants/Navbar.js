@@ -18,7 +18,7 @@ const Navbar = () => {
                                           subMenus={
                                                 [
                                                       { name: "Présentation", link: "/R2S-Composites/expertise/" },
-                                                      { name: "Demander un devis", link: "/R2S-Composites/expertise/devis/" }
+                                                      { name: "Demander un devis", link: "/R2S-Composites/expertise/devis" }
                                                 ]
                                           } />
                               </li>
@@ -28,8 +28,8 @@ const Navbar = () => {
                                           subMenus={
                                                 [
                                                       { name: "Présentation", link: "/R2S-Composites/naval/" },
-                                                      { name: "Réalisations", link: "/R2S-Composites/naval/realisations/" },
-                                                      { name: "Demander un devis", link: "/R2S-Composites/naval/devis/" }
+                                                      { name: "Réalisations", link: "/R2S-Composites/naval/realisations" },
+                                                      { name: "Demander un devis", link: "/R2S-Composites/naval/devis" }
                                                 ]
                                           } />
                               </li>
@@ -39,8 +39,8 @@ const Navbar = () => {
                                           subMenus={
                                                 [
                                                       { name: "Présentation", link: "/R2S-Composites/piscine/" },
-                                                      { name: "Projets  ", link: "/R2S-Composites/piscine/realisations/" },
-                                                      { name: "Demander un devis", link: "/R2S-Composites/piscine/devis/" }
+                                                      { name: "Projets  ", link: "/R2S-Composites/piscine/realisations" },
+                                                      { name: "Demander un devis", link: "/R2S-Composites/piscine/devis" }
                                                 ]
                                           } />
                               </li>
@@ -50,8 +50,8 @@ const Navbar = () => {
                                           subMenus={
                                                 [
                                                       { name: "Présentation", link: "/R2S-Composites/industrie/" },
-                                                      { name: "Réalisations", link: "/R2S-Composites/industrie/realisations/" },
-                                                      { name: "Demander un devis", link: "/R2S-Composites/industrie/devis/" }
+                                                      { name: "Réalisations", link: "/R2S-Composites/industrie/realisations" },
+                                                      { name: "Demander un devis", link: "/R2S-Composites/industrie/devis" }
                                                 ]
                                           } />
                               </li>
