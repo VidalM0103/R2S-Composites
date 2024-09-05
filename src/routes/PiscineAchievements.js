@@ -16,13 +16,13 @@ export default function Achievements() {
                         <Carousel slide={false}>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/piscine/projet-1.png"} alt="" />
+                                    <img src={process.env.PUBLIC_URL + "/projet-1.png"} alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/piscine/projet-2.png"} alt="" />
+                                    <img src={process.env.PUBLIC_URL + "/projet-2.png"} alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/piscine/projet-3.png"} alt="" />
+                                    <img src={process.env.PUBLIC_URL + "/projet-3.png"} alt="" />
                                 </div>
                             </div>
 
