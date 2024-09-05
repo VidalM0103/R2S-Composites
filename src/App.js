@@ -17,16 +17,16 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/expertise" element={<Expertise />} />
-        <Route path="/naval" element={<Naval />} />
-        <Route path="/naval/realisations" element={<NavalAchievements />} />
-        <Route path="/piscine" element={<Piscine />} />
-        <Route path="/piscine/realisations" element={<PiscineAchievements />} />
-        <Route path="/industrie" element={<Industrie />} />
-        <Route path="/industrie/realisations" element={<IndustrieAchievements />} />
+        <Route path="/R2S-Composites" element={<Home />} />
+        <Route path="/R2S-Composites/expertise" element={<Expertise />} />
+        <Route path="/R2S-Composites/naval" element={<Naval />} />
+        <Route path="/R2S-Composites/naval/realisations" element={<NavalAchievements />} />
+        <Route path="/R2S-Composites/piscine" element={<Piscine />} />
+        <Route path="/R2S-Composites/piscine/realisations" element={<PiscineAchievements />} />
+        <Route path="/R2S-Composites/industrie" element={<Industrie />} />
+        <Route path="/R2S-Composites/industrie/realisations" element={<IndustrieAchievements />} />
+        <Route path="/R2S-Composites/about" element={<About />} />
+        <Route path="/R2S-Composites/contact" element={<Contact />} />
       </Routes>
     </>
   );
