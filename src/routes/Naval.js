@@ -17,7 +17,7 @@ export default function Naval() {
                                 <div className="absolute top-0 bg-gray-700 bg-opacity-75 w-full flex items-center justify-center min-h-[calc(75px)]">
                                     <h3 className="text-xl font-bold text-center">Réparation ou modification de votre bateau (délaminage, fissure, déformation, talonnage, frottement)</h3>
                                 </div>
-                                <img src={process.env.PUBLIC_URL + "/presentation/prestation-naval-1-1.jpeg"} alt="" />
+                                <img src="presentation/prestation-naval-1-1.jpeg" alt="" />
                             </div>
                             <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div className="absolute top-0 bg-gray-700 bg-opacity-75 w-full flex items-center justify-center min-h-[calc(75px)]">
