@@ -14,27 +14,27 @@ export default function Achievements() {
                         <Carousel slide={false}>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-1-1.png"} alt="" />
+                                    <img src="chantier-1-1.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-1-2.png"} alt="" />
+                                    <img src="chantier-1-2.png" alt="" />
                                 </div>
                             </div>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-2-1.png"} alt="" />
+                                    <img src="chantier-2-1.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-2-2.png"} alt="" />
+                                    <img src="chantier-2-2.png" alt="" />
                                 </div>
 
                             </div>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-3-1.png"} alt="" />
+                                    <img src="chantier-3-1.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-3-2.png"} alt="" />
+                                    <img src="chantier-3-2.png" alt="" />
                                 </div>
                             </div>
                         </Carousel>

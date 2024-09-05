@@ -9,10 +9,10 @@ export default function Expertise() {
                 <section className="bg-gray-800 p-6 rounded-lg shadow-lg grid grid-cols-3 h-[calc(100vh-180px)]">
                     <div className="flex flex-col gap-4 items-center justify-evenly col-span-1">
                         <div >
-                            <img src={process.env.PUBLIC_URL + "/expertise-bateau-sonde.jpeg"} alt="" className="rounded-lg shadow-lg max-h-[350px]" />
+                            <img src="expertise-bateau-sonde.jpeg" alt="" className="rounded-lg shadow-lg max-h-[350px]" />
                         </div>
                         <div className="flex items-center justify-center col-span-1">
-                            <img src={process.env.PUBLIC_URL + "/expertise-bateau-reunion.jpeg"} alt="" className="rounded-lg shadow-lg max-h-[350px]" />
+                            <img src="expertise-bateau-reunion.jpeg" alt="" className="rounded-lg shadow-lg max-h-[350px]" />
                         </div>
                     </div>
                     <div className="flex flex-col justify-evenly items-start p-4 col-span-2">
