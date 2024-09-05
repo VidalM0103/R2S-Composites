@@ -1,7 +1,7 @@
 export default function Home() {
     return (
         <>
-            <header className="font-poppins flex flex-col items-center justify-around text-yellow-300 bg-cover bg-center min-h-[calc(100vh-96px)]  gap-6 mt-[calc(96px)]" style={{ fontWeight: "bold", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)", backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('landingPage/harbor.jpg')" }}>
+            <header className="font-poppins flex flex-col items-center justify-around text-yellow-300 bg-cover bg-center min-h-[calc(100vh-96px)]  gap-6 mt-[calc(96px)]" style={{ fontWeight: "bold", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)", backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./landingPage/harbor.jpg')" }}>
                 <div className="flex flex-col items-center justify-center">
                     <h1 className="text-7xl">R2S COMPOSITES</h1>
                     <p className="text-5xl">Spécialiste dans les matériaux composites</p>
