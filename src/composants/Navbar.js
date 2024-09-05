@@ -28,7 +28,7 @@ const Navbar = () => {
                                           subMenus={
                                                 [
                                                       { name: "Présentation", link: "/R2S-Composites/naval/" },
-                                                      { name: "Réalisations", link: "/R2S-Composites/naval/realisations" },
+                                                      { name: "Réalisations", link: "/R2S-Composites/naval/realisations/" },
                                                       { name: "Demander un devis", link: "/R2S-Composites/naval/devis" }
                                                 ]
                                           } />
