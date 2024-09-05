@@ -1,7 +1,6 @@
 import { Carousel } from "flowbite-react"
 
 export default function Achievements() {
-
     return (
         <>
             <header className="bg-yellow-300 text-white p-6 mt-24 font-poppins">
