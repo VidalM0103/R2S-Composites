@@ -13,130 +13,130 @@ export default function Achievements() {
                         <Carousel slide={false}>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-1-1.png"} alt="" />
+                                    <img src="chantier-1-1.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-1-2.png"} alt="" />
+                                    <img src="chantier-1-2.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-1-3.png"} alt="" />
+                                    <img src="chantier-1-3.png" alt="" />
                                 </div>
                             </div>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-2-1.png"} alt="" />
+                                    <img src="chantier-2-1.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-2-2.png"} alt="" />
+                                    <img src="chantier-2-2.png" alt="" />
                                 </div>
 
                             </div>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-3-1.png"} alt="" />
+                                    <img src="chantier-3-1.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-3-2.png"} alt="" />
-                                </div>
-                            </div>
-                            <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-                                <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-4-1.png"} alt="" />
-                                </div>
-                                <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-4-2.png"} alt="" />
+                                    <img src="chantier-3-2.png" alt="" />
                                 </div>
                             </div>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-5-1.png"} alt="" />
+                                    <img src="chantier-4-1.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-5-2.png"} alt="" />
-                                </div>
-                                <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-5-3.png"} alt="" />
+                                    <img src="chantier-4-2.png" alt="" />
                                 </div>
                             </div>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-6-1.png"} alt="" />
+                                    <img src="chantier-5-1.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-6-2.png"} alt="" />
+                                    <img src="chantier-5-2.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-6-3.png"} alt="" />
+                                    <img src="chantier-5-3.png" alt="" />
                                 </div>
                             </div>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-7-1.png"} alt="" />
+                                    <img src="chantier-6-1.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-7-2.png"} alt="" />
+                                    <img src="chantier-6-2.png" alt="" />
+                                </div>
+                                <div>
+                                    <img src="chantier-6-3.png" alt="" />
+                                </div>
+                            </div>
+                            <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+                                <div>
+                                    <img src="chantier-7-1.png" alt="" />
+                                </div>
+                                <div>
+                                    <img src="chantier-7-2.png" alt="" />
                                 </div>
                                 {/** 
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-7-3.png"} alt="" />
+                                    <img src="chantier-7-3.png" alt="" />
                                 </div>
                                 */}
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-7-4.png"} alt="" />
+                                    <img src="chantier-7-4.png" alt="" />
                                 </div>
                             </div>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-8-1.png"} alt="" />
+                                    <img src="chantier-8-1.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-8-2.png"} alt="" />
+                                    <img src="chantier-8-2.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-8-3.png"} alt="" />
-                                </div>
-                            </div>
-                            <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-                                <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-9-1.png"} alt="" />
-                                </div>
-                                <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-9-2.png"} alt="" />
-                                </div>
-                                <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-9-3.png"} alt="" />
+                                    <img src="chantier-8-3.png" alt="" />
                                 </div>
                             </div>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-10-1.png"} alt="" />
+                                    <img src="chantier-9-1.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-10-2.png"} alt="" />
+                                    <img src="chantier-9-2.png" alt="" />
+                                </div>
+                                <div>
+                                    <img src="chantier-9-3.png" alt="" />
                                 </div>
                             </div>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-11-1.png"} alt="" />
+                                    <img src="chantier-10-1.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-11-2.png"} alt="" />
+                                    <img src="chantier-10-2.png" alt="" />
+                                </div>
+                            </div>
+                            <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+                                <div>
+                                    <img src="chantier-11-1.png" alt="" />
+                                </div>
+                                <div>
+                                    <img src="chantier-11-2.png" alt="" />
                                 </div>
                                 {/** 
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-11-3.png"} alt="" />
+                                    <img src="chantier-11-3.png" alt="" />
                                 </div>
                                 */}
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-11-4.png"} alt="" />
+                                    <img src="chantier-11-4.png" alt="" />
                                 </div>
                             </div>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-12-1.png"} alt="" />
+                                    <img src="chantier-12-1.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src={process.env.PUBLIC_URL + "/chantier-12-2.png"} alt="" />
+                                    <img src="chantier-12-2.png" alt="" />
                                 </div>
                             </div>
                         </Carousel>
