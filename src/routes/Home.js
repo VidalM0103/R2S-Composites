@@ -15,7 +15,7 @@ export default function Home() {
                 <section>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 m-6">
-                        <section className="bg-gray-700 p-4 rounded-lg bg-opacity-75 flex flex-col justify-items-center">
+                        <section className="bg-gray-700 p-4 rounded-lg bg-opacity-75 flex flex-col justify-center">
                             <h3 className="text-2xl mb-4 text-justify"><b>R2S Expertise</b> maritime sera en mesure de répondre à tout type d’expertise sur votre bateau</h3>
                             <br />
                             <ul className="list-disc list-inside ml-10">
@@ -26,7 +26,7 @@ export default function Home() {
                                 <li>Bilan osmotique ( plan de sonde cardinale )</li>
                             </ul>
                         </section>
-                        <section className="bg-gray-700 p-4 rounded-lg bg-opacity-75">
+                        <section className="bg-gray-700 p-4 rounded-lg bg-opacity-75 flex flex-col justify-center">
                             <h3 className="text-2xl mb-4 text-justify"><b>R2S Naval</b> sera en mesure d’effectuer tout type de réparations composites ainsi que l’entretien de votre bateau grâce a une équipe de professionnels à votre service</h3>
                             <br />
                             <ul className="list-disc list-inside ml-10 ">
@@ -35,7 +35,7 @@ export default function Home() {
                                 <li>Carénage antifouling.</li>
                             </ul>
                         </section>
-                        <section className="bg-gray-700 p-4 rounded-lg bg-opacity-75">
+                        <section className="bg-gray-700 p-4 rounded-lg bg-opacity-75 flex flex-col justify-center">
                             <h3 className="text-2xl mb-4 text-justify"><b>R2S Piscine</b> est spécialisée dans la restauration de piscines en polyester. Une piscine coque ou une piscine en béton stratifié ( fibre de verre + Gel-Coat ) nécessite une réfection Gel-Coat tout les dix ans afin d’éviter un phénomène osmotique</h3>
                             <p>Dans quel cas ma piscine nécessite une réfection Gel-Coat ?</p>
                             <ul className="list-disc list-inside ml-10">
@@ -45,7 +45,7 @@ export default function Home() {
                                 <li>Vous souhaitez changer la couleur de votre piscine.</li>
                             </ul>
                         </section>
-                        <section className="bg-gray-700 p-4 rounded-lg bg-opacity-75">
+                        <section className="bg-gray-700 p-4 rounded-lg bg-opacity-75 flex flex-col justify-center">
                             <h3 className="text-2xl mb-4 text-justify"><b>R2S Industrie</b> est spécialisée dans les réparations composites ainsi que divers projets grâce a une équipe de professionnels à votre service, nos professionnels vous garantissent des prestations sur-mesure, adaptées à vos besoins</h3>
                             <br />
                             <ul className="list-disc list-inside ml-10">
