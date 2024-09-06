@@ -13,29 +13,16 @@ export default function Achievements() {
                     <div className="h-[calc(600px)] w-[calc(1200px)] flex items-center">
                         <Carousel slide={false}>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-                                <div>
-                                    <img src="chantier-1-1.png" alt="" />
-                                </div>
-                                <div>
-                                    <img src="chantier-1-2.png" alt="" />
-                                </div>
+                                <img className="max-w-[calc(600px)]" src="chantier-1-1.png" alt="" />
+                                <img className="max-w-[calc(600px)]" src="chantier-1-2.png" alt="" />
                             </div>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-                                <div>
-                                    <img src="chantier-2-1.png" alt="" />
-                                </div>
-                                <div>
-                                    <img src="chantier-2-2.png" alt="" />
-                                </div>
-
+                                <img className="max-w-[calc(600px)]" src="chantier-2-1.png" alt="" />
+                                <img className="max-w-[calc(600px)]" src="chantier-2-2.png" alt="" />
                             </div>
                             <div className="flex h-full justify-center items-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-                                <div>
-                                    <img src="chantier-3-1.png" alt="" />
-                                </div>
-                                <div>
-                                    <img src="chantier-3-2.png" alt="" />
-                                </div>
+                                <img className="max-w-[calc(600px)]" src="chantier-3-1.png" alt="" />
+                                <img className="max-w-[calc(600px)]" src="chantier-3-2.png" alt="" />
                             </div>
                         </Carousel>
                     </div>
