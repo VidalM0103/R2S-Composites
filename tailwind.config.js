@@ -15,6 +15,10 @@ module.exports = {
       },
       backgroundImage: {
         'hero': "url('../public/landingPage/harbor.jpg')"
+      },
+      colors: {
+        primary: "#FACA15",
+        primaryDark: "#c29d10"
       }
     }
   },

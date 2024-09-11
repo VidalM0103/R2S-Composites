@@ -13,18 +13,6 @@ export default function Naval() {
                         <Carousel slide={false}>
                             <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div className="absolute top-0 bg-gray-700 bg-opacity-75 w-full flex items-center justify-center min-h-[calc(75px)]">
-                                    <h3 className="text-xl font-bold text-center">Réparation ou modification de votre bateau (délaminage, fissure, déformation, talonnage, frottement)</h3>
-                                </div>
-                                <img src="presentation/prestation-naval-1-1.jpeg" alt="" />
-                            </div>
-                            <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-                                <div className="absolute top-0 bg-gray-700 bg-opacity-75 w-full flex items-center justify-center min-h-[calc(75px)]">
-                                    <h3 className="text-xl font-bold text-center">Réparation ou modification de votre bateau (délaminage, fissure, déformation, talonnage, frottement)</h3>
-                                </div>
-                                <img src="presentation/prestation-naval-1-2.jpeg" alt="" />
-                            </div>
-                            <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-                                <div className="absolute top-0 bg-gray-700 bg-opacity-75 w-full flex items-center justify-center min-h-[calc(75px)]">
                                     <h3 className="text-xl font-bold text-center">Polissage de votre coque : Nous effectuons un polissage de votre coque afin de redonner le brillant d’origine a votre Gel-Coat</h3>
                                 </div>
                                 <img src="presentation/prestation-naval-2-1.jpeg" alt="" />
@@ -35,6 +23,19 @@ export default function Naval() {
                                 </div>
                                 <img src="presentation/prestation-naval-2-2.jpeg" alt="" />
                             </div>
+                            <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+                                <div className="absolute top-0 bg-gray-700 bg-opacity-75 w-full flex items-center justify-center min-h-[calc(75px)]">
+                                    <h3 className="text-xl font-bold text-center">Réparation ou modification de votre bateau (délaminage, fissure, déformation, talonnage, frottement)</h3>
+                                </div>
+                                <img src="presentation/prestation-naval-1-1.jpeg" alt="" />
+                            </div>
+                            <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+                                <div className="absolute top-0 bg-gray-700 bg-opacity-75 w-full flex items-center justify-center min-h-[calc(75px)]">
+                                    <h3 className="text-xl font-bold text-center">Réparation ou modification de votre bateau (délaminage, fissure, déformation, talonnage, frottement)</h3>
+                                </div>
+                                <img src="presentation/prestation-naval-1-2.jpeg" alt="" />
+                            </div>
+
                             <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div className="absolute top-0 bg-gray-700 bg-opacity-75 w-full flex items-center justify-center  min-h-[calc(75px)]">
                                     <h3 className="text-xl font-bold text-center">Carénage antifouling : matrice dure / semi–érodable / érodable</h3>

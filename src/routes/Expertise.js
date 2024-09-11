@@ -6,7 +6,7 @@ export default function Expertise() {
             </header>
 
             <main className="text-white h-[calc(100vh-180px)] font-poppins">
-                <section className="bg-gray-800 p-6 rounded-lg shadow-lg grid grid-cols-3 h-[calc(100vh-180px)]">
+                <section className="bg-gray-800 p-8 grid grid-cols-3 h-[calc(100vh-180px)]">
                     <div className="flex flex-col gap-4 items-center justify-evenly col-span-1">
                         <div >
                             <img src="expertise-bateau-sonde.jpeg" alt="" className="rounded-lg shadow-lg max-h-[350px]" />

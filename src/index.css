@@ -8,8 +8,64 @@
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
+
 @layer base {
-    body {
-        background-color: #111827;
+    html {
+        @apply font-poppins;
     }
+
+    body {
+        @apply bg-gray-800;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        @apply text-white;
+    }
+
+    h1 {
+        @apply text-4xl font-semibold;
+    }
+
+    h2 {
+        @apply text-3xl font-semibold;
+    }
+
+    h3 {
+        @apply text-2xl font-semibold;
+    }
+
+    h4 {
+        @apply text-xl font-semibold;
+    }
+
+    h5 {
+        @apply text-lg font-semibold;
+    }
+
+    p {
+        @apply text-base;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply py-2 px-5 bg-primary text-white font-semibold rounded-md shadow-md hover:bg-primaryDark;
+    }
+}
+
+.single-thumb .range-slider__thumb[data-lower] {
+    width: 0;
+}
+
+.single-thumb .range-slider__thumb[data-upper] {
+    background-color: #FACA15;
+
+}
+
+.single-thumb .range-slider__range {
+    background-color: #c29d10 !important;
 }
