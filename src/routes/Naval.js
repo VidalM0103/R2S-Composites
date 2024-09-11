@@ -7,10 +7,8 @@ export default function Naval() {
                 <h1 className="text-3xl font-bold">R2S Naval - Présentation</h1>
             </header>
 
-            <main className="text-white bg-gray-800 font-poppins">
-                <section className="min-h-[calc(100vh-180px)] flex flex-col items-center justify-center">
-                    <p className="max-w-[calc(1200px)] mb-4">L’entreprise R2S Composites basée à La Seyne sur Mer ( 83 ) est spécialisée dans les réparations composites ainsi que l’entretien de votre bateau grâce a une équipe de professionnels à votre service, nos professionnels vous garantissent des prestations sur-mesure, adaptées à vos besoins ainsi qu’aux caractéristiques de votre bateau.</p>
-                    <h2 className="text-2xl font-bold text-yellow-300 mb-4">Prestations proposées</h2>
+            <main className="text-white bg-gray-800 font-poppins min-h-[calc(100vh-180px)] flex">
+                <section className="min-h-[calc(100vh-180px)] flex flex-col items-center justify-center flex-none w-[calc(600px)] mx-8">
                     <div className="h-[calc(600px)] w-[calc(600px)] flex items-center">
                         <Carousel slide={false}>
                             <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
@@ -51,9 +49,12 @@ export default function Naval() {
                             </div>
                         </Carousel>
                     </div>
-
                 </section>
-            </main >
+                <section className="min-h-[calc(100vh-180px)] flex flex-col items-center justify-center flex-1 p-8">
+                    <p className="text-justify text-lg max-w-[calc(1000px)]">L’entreprise R2S Composites basée à La Seyne sur Mer (83) est spécialisée dans les réparations composites ainsi que l’entretien de votre bateau grâce a une équipe de professionnels à votre service, nos professionnels vous garantissent des prestations sur-mesure, adaptées à vos besoins ainsi qu’aux caractéristiques de votre bateau.</p>
+                </section>
+
+            </main>
         </>
     );
 }

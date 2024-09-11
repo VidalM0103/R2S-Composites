@@ -15,7 +15,7 @@ export default function Expertise() {
                             <img src="expertise-bateau-reunion.jpeg" alt="" className="rounded-lg shadow-lg max-h-[350px]" />
                         </div>
                     </div>
-                    <div className="flex flex-col justify-evenly items-start p-4 col-span-2">
+                    <div className="flex flex-col justify-evenly items-start p-4 col-span-2 text-lg">
                         <section>
                             <h3 className="text-2xl font-bold text-yellow-300 mb-2">Expertise de pré-Transactionnelle</h3>
                             <p className="mb-4">L’expertise avant achat donne lieu à la rédaction d’un rapport basé sur les observations
