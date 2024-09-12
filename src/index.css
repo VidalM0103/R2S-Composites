@@ -4,10 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
-.text-stroke-3 {
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-}
-
 
 @layer base {
     html {
@@ -63,9 +59,9 @@
 
 .single-thumb .range-slider__thumb[data-upper] {
     background-color: #FACA15;
-
 }
 
 .single-thumb .range-slider__range {
     background-color: #c29d10 !important;
+    border-radius: 4px;
 }

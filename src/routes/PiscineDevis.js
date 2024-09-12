@@ -42,7 +42,7 @@ export default function ExpertisePiscine() {
     return (
         <>
             <header className="bg-yellow-300 text-white p-6 mt-24 font-poppins">
-                <h1 className="text-3xl font-bold">R2S Piscine - Devis</h1>
+                <h1 className="text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Piscine - Devis</h1>
             </header>
             <section className="font-poppins min-h-[calc(100vh-180px)] w-full bg-slate-800 flex justify-around items-center" id="contact">
                 <div className="p-5 lg:p-20 w-2/3" id="form">

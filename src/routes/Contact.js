@@ -29,7 +29,7 @@ export default function Contact() {
     return (
         <>
             <header className="bg-yellow-300 text-white p-6 mt-24 font-poppins">
-                <h1 className="text-3xl font-bold">R2S - Contact</h1>
+                <h1 className="text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S - Contact</h1>
             </header>
             <section className="font-poppins min-h-[calc(100vh-180px)] w-full bg-slate-800 flex justify-around items-center" id="contact">
                 <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">

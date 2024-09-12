@@ -1,14 +1,43 @@
 import { useState } from 'react';
-import 'react-range-slider-input/dist/style.css';
 import {
     Label,
     Textarea,
-    TextInput,
+    TextInput
 } from "flowbite-react";
+import CustomFlowbiteReact from "../CustomFlowbiteReact.js";
 
 
 export default function IndustrieDevis() {
+    const customForm = CustomFlowbiteReact.customForm;
     const [result, setResult] = useState("");
+
+    const formItems = [
+        { id: "name", label: "Nom", type: "TextInput", subtype: "text", required: true, placeholder: "" },
+        { id: "firstname", label: "Prénom", type: "TextInput", subtype: "text", required: false, placeholder: "" },
+        { id: "email", label: "Email", type: "TextInput", subtype: "email", required: true, placeholder: "name@email.fr" },
+        { id: "tel", label: "Téléphone", type: "TextInput", subtype: "tel", required: true, placeholder: "06.06.06.06.06" },
+        { id: "addr", label: "Adresse", type: "TextInput", subtype: "text", required: false, placeholder: "" },
+        { id: "nameFirm", label: "Nom de l'entreprise", type: "TextInput", subtype: "text", required: false, placeholder: "" },
+        { id: "addrSite", label: "Adresse du chantier", type: "TextInput", subtype: "text", required: false, placeholder: "" },
+        { id: "description", label: "Description", type: "TextArea", required: false },
+
+    ];
+
+    const listItems = formItems.map((item) =>
+        <div className={item.type === "TextArea" && "col-span-2"} key={item.label}>
+            <div className="mb-2 block">
+                <Label theme={customForm.labelCustom} htmlFor={item.label} value={item.label} />
+            </div>
+            {
+                item.type === "TextInput" &&
+                <TextInput theme={customForm.textInputCustom} color="primary" type={item.subtype} required={item.required} placeholder={item.placeholder} />
+            }
+            {
+                item.type === "TextArea" &&
+                <Textarea theme={customForm.textAreaInputCustom} color="primary" required={item.required} rows={4} />
+            }
+        </div>
+    );
 
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -36,70 +65,18 @@ export default function IndustrieDevis() {
     return (
         <>
             <header className="bg-yellow-300 text-white p-6 mt-24 font-poppins">
-                <h1 className="text-3xl font-bold">R2S Industrie - Devis</h1>
+                <h1 className="text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Industrie - Devis</h1>
             </header>
             <section className="font-poppins min-h-[calc(100vh-180px)] w-full bg-slate-800 flex justify-around items-center" id="contact">
-                <div className="p-5 lg:px-20 w-2/3" id="form">
-                    <form id="contactForm" onSubmit={onSubmit}>
-                        <div className="grid grid-cols-2 gap-4">
-                            <div className="mb-2 block">
-                                <div className="mb-2 block">
-                                    <Label className="text-white" htmlFor="name" value="Nom" />
-                                </div>
-                                <TextInput id="name" type="text" required />
-                            </div>
-                            <div className="mb-2 block">
-                                <div className="mb-2 block">
-                                    <Label className="text-white" htmlFor="firstname" value="Prénom" />
-                                </div>
-                                <TextInput id="firstname" type="text" />
-                            </div>
-                            <div className="mb-2 block">
-                                <div className="mb-2 block">
-                                    <Label className="text-white" htmlFor="email" value="Email" />
-                                </div>
-                                <div />
-                                <TextInput id="email" type="email" />
-                            </div>
-                            <div className="mb-2 block">
-                                <div className="mb-2 block">
-                                    <Label className="text-white" htmlFor="phone" value="Téléphone" />
-                                </div>
-                                <TextInput id="phone" type="tel" />
-                            </div>
-                            <div className="mb-2 block">
-                                <div className="mb-2 block">
-                                    <Label className="text-white" htmlFor="adresse" value="Adresse" />
-                                </div>
-                                <TextInput id="addr" type="text" />
-                            </div>
-                            <div></div>
-                            <div className="mb-2 block">
-                                <div className="mb-2 block">
-                                    <Label className="text-white" htmlFor="shipName" value="Nom de la société" />
-                                </div>
-                                <div />
-                                <TextInput id="shipName" type="text" />
-                            </div>
-                            <div className="mb-2 block">
-                                <div className="mb-2 block">
-                                    <Label className="text-white" htmlFor="addrChantier" value="Adresse du chantier" />
-                                </div>
-                                <TextInput id="addrChantier" type="text" required />
-                            </div>
-                            <div className="mx-0 mb-1 sm:mb-4 col-span-2">
-                                <div className="mb-2 block">
-                                    <Label className="text-white" htmlFor="message" value="Description du chantier" />
-                                </div>
-                                <Textarea id="message" className='min-h-28' />
-                            </div>
-                        </div>
-                        <div className="text-center">
-                            <button type="submit" className="w-60 btn-primary">Demander un devis</button>
-                            <span className="text-white">{result}</span>
-                        </div>
-                    </form >
-                </div >
+                <form id="contactForm" onSubmit={onSubmit}>
+                    <div className="grid grid-cols-2 gap-4 w-[calc(1200px)]">
+                        {listItems}
+                    </div>
+                    <div className="my-8 text-center">
+                        <button type="submit" className="w-60 btn-primary">Demander un devis</button>
+                        <span className="text-white">{result}</span>
+                    </div>
+                </form >
             </section >
         </>
     );

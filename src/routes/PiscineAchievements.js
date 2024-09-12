@@ -5,7 +5,7 @@ export default function Achievements() {
     return (
         <>
             <header className="bg-yellow-300 text-white p-6 mt-24 font-poppins">
-                <h1 className="text-3xl font-bold">R2S Piscine - Réalisations</h1>
+                <h1 className="text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Piscine - Projets</h1>
             </header>
 
             <main className="text-white bg-gray-800 font-poppins min-h-[calc(100vh-180px)] flex items-center justify-center">

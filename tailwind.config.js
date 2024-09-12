@@ -10,6 +10,9 @@ module.exports = {
 
   theme: {
     extend: {
+      textShadow: {
+        md: '0 2px 4px var(--tw-shadow-color)',
+      },
       fontFamily: {
         poppins: ["Poppins", ...defaultTheme.fontFamily.sans]
       },
@@ -18,7 +21,7 @@ module.exports = {
       },
       colors: {
         primary: "#FACA15",
-        primaryDark: "#c29d10"
+        primaryDark: "#c29d10",
       }
     }
   },
