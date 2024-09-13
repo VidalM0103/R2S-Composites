@@ -23,8 +23,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "next/core-web-vitals"
+      "react-app"
     ]
   },
   "browserslist": {
@@ -40,7 +39,6 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-transform-private-property-in-object": "^7.24.7",
     "gh-pages": "^6.1.1",
     "tailwindcss": "^3.4.9"
   }
