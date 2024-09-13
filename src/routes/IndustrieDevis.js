@@ -30,11 +30,11 @@ export default function IndustrieDevis() {
             </div>
             {
                 item.type === "TextInput" &&
-                <TextInput theme={customForm.textInputCustom} color="primary" type={item.subtype} required={item.required} placeholder={item.placeholder} />
+                <TextInput theme={customForm.textInputCustom} color="primary" type={item.subtype} required={item.required} placeholder={item.placeholder} name={item.label} />
             }
             {
                 item.type === "TextArea" &&
-                <Textarea theme={customForm.textAreaInputCustom} color="primary" required={item.required} rows={4} />
+                <Textarea theme={customForm.textAreaInputCustom} color="primary" required={item.required} rows={4} name={item.label} />
             }
         </div>
     );
@@ -72,7 +72,7 @@ export default function IndustrieDevis() {
                     <div className="grid grid-cols-2 gap-4 w-[calc(1200px)]">
                         {listItems}
                     </div>
-                    <div className="my-8 text-center">
+                    <div className="my-8 text-center flex flex-col items-center">
                         <button type="submit" className="w-60 btn-primary">Demander un devis</button>
                         <span className="text-white">{result}</span>
                     </div>
