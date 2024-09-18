@@ -34,11 +34,11 @@ const Dropdown = ({ ulId, menuTitle, subMenus }) => {
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                 </svg>
             </ul>
-            <ul id={ulId} className="ulMenu lg:!absolute hidden lg:!hidden lg:group-hover:!block bg-gray-700 w-56 border-t-2 border-yellow-300 pl-8 lg:pl-0">
+            <ul id={ulId} className="ulMenu lg:!absolute hidden lg:!hidden lg:group-hover:!block bg-gray-700 w-56 border-t-2 border-yellow-300 lg:pl-0">
                 {
                     subMenus.map((subMenu, index) => (
                         <>
-                            <li className="h-12 px-0 lg:px-4 flex items-center hover:bg-gray-800" key={index}>
+                            <li className="h-12 pl-4 flex items-center hover:bg-gray-800" key={index}>
                                 <Link onClick={closeMenu} to={subMenu.link} className="block py-2 px-3 hover:text-yellow-300">{subMenu.name}</Link>
                             </li>
                         </>
