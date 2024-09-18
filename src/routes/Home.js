@@ -14,7 +14,7 @@ export default function Home() {
             <main className="text-white font-poppins">
                 <section className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6 m-2 lg:m-6 text-base lg:text-lg">
                     <section className="lg:bg-gray-700 p-2 lg:p-8 rounded-lg bg-opacity-75 flex flex-col justify-center">
-                        <h3 className="text-xl lg:text-2xl mb-4 text-justify font-normal"><b>R2S Expertise</b> maritime sera en mesure de répondre à tout type d’expertise sur votre bateau</h3>
+                        <h3 className="text-xl lg:text-2xl mb-2 lg:mb-4 text-justify font-normal"><b>R2S Expertise</b> maritime sera en mesure de répondre à tout type d’expertise sur votre bateau</h3>
                         <br />
                         <ul className="list-disc list-inside ml-2 lg:ml-10">
                             <li>Expertise de pré-Transactionnelle</li>
@@ -26,7 +26,7 @@ export default function Home() {
                     </section>
                     <hr className="text-white lg:hidden" />
                     <section className="lg:bg-gray-700 p-2 lg:p-8 rounded-lg bg-opacity-75 flex flex-col justify-center">
-                        <h3 className="text-xl lg:text-2xl mb-4 text-justify font-normal"><b>R2S Naval</b> sera en mesure d’effectuer tout type de réparations composites ainsi que l’entretien de votre bateau grâce a une équipe de professionnels à votre service</h3>
+                        <h3 className="text-xl lg:text-2xl mb-2 lg:mb-4 text-justify font-normal"><b>R2S Naval</b> sera en mesure d’effectuer tout type de réparations composites ainsi que l’entretien de votre bateau grâce a une équipe de professionnels à votre service</h3>
                         <br />
                         <ul className="list-disc list-inside ml-2 lg:ml-10">
                             <li>Réparation ou modification de votre bateau. (délaminage, fissure, déformation, talonnage, frottement)</li>
@@ -37,7 +37,7 @@ export default function Home() {
                     <hr className="text-white lg:hidden" />
 
                     <section className="lg:bg-gray-700 p-2 lg:p-8 rounded-lg bg-opacity-75 flex flex-col justify-center">
-                        <h3 className="text-xl lg:text-2xl mb-4 text-justify font-normal"><b>R2S Piscine</b> est spécialisée dans la restauration de piscines en polyester. Une piscine coque ou une piscine en béton stratifié (fibre de verre + Gel-Coat) nécessite une réfection Gel-Coat tout les dix ans afin d’éviter un phénomène osmotique</h3>
+                        <h3 className="text-xl lg:text-2xl mb-2 lg:mb-4 text-justify font-normal"><b>R2S Piscine</b> est spécialisée dans la restauration de piscines en polyester. Une piscine coque ou une piscine en béton stratifié (fibre de verre + Gel-Coat) nécessite une réfection Gel-Coat tout les dix ans afin d’éviter un phénomène osmotique</h3>
                         <p>Dans quel cas ma piscine nécessite une réfection Gel-Coat ?</p>
                         <ul className="list-disc list-inside ml-2 lg:ml-10">
                             <li>Votre piscine a plus de dix ans.</li>
@@ -48,7 +48,7 @@ export default function Home() {
                     </section>
                     <hr className="text-white lg:hidden" />
                     <section className="lg:bg-gray-700 p-2 lg:p-8 rounded-lg bg-opacity-75 flex flex-col justify-center">
-                        <h3 className="text-xl lg:text-2xl mb-4 text-justify font-normal"><b>R2S Industrie</b> est spécialisée dans les réparations composites ainsi que divers projets grâce a une équipe de professionnels à votre service, nos professionnels vous garantissent des prestations sur-mesure, adaptées à vos besoins</h3>
+                        <h3 className="text-xl lg:text-2xl mb-2 lg:mb-4 text-justify font-normal"><b>R2S Industrie</b> est spécialisée dans les réparations composites ainsi que divers projets grâce a une équipe de professionnels à votre service, nos professionnels vous garantissent des prestations sur-mesure, adaptées à vos besoins</h3>
                         <br />
                         <ul className="list-disc list-inside ml-2 lg:ml-10">
                             <li>Application revêtement Epoxy sur pièces métallique.</li>
