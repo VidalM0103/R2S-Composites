@@ -38,7 +38,7 @@ const Dropdown = ({ ulId, menuTitle, subMenus }) => {
                 {
                     subMenus.map((subMenu, index) => (
                         <>
-                            <li className="h-12 px-0 lg:px-4 flex items-center" key={index}>
+                            <li className="h-12 px-0 lg:px-4 flex items-center hover:bg-gray-800" key={index}>
                                 <Link onClick={closeMenu} to={subMenu.link} className="block py-2 px-3 hover:text-yellow-300">{subMenu.name}</Link>
                             </li>
                         </>
