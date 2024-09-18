@@ -2,7 +2,7 @@ export default function Industrie() {
     return (
         <>
             <header className="bg-yellow-300 text-white p-6 mt-24 font-poppins">
-                <h1 className="text-xl lg:text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Industrie - Présentation</h1>
+                <h1 className="text-2xl lg:text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Industrie - Présentation</h1>
             </header>
             <main className="text-white bg-gray-800 p-4 lg:p-8 min-h-[calc(100vh-180px)] font-poppins flex flex-col lg:flex-row items-center justify-center">
 

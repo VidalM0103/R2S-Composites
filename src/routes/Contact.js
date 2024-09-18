@@ -29,17 +29,15 @@ export default function Contact() {
     return (
         <>
             <header className="bg-yellow-300 text-white p-6 mt-24 font-poppins">
-                <h1 className="text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S - Contact</h1>
+                <h1 className="text-2xl lg:text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S - Contact</h1>
             </header>
             <section className="font-poppins min-h-[calc(100vh-180px)] w-full bg-slate-800 flex justify-around items-center" id="contact">
                 <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-                    <div className="mb-4">
-                        <div className="mb-6 max-w-3xl text-center sm:text-center lg:mx-auto lg:mb-12">
-                            <h2
-                                className="mb-4 font-bold tracking-tight text-white text-3xl sm:text-5xl">
-                                Besoin d'un renseignement?
-                            </h2>
-                        </div>
+                    <div className="mb-6 max-w-3xl text-center sm:text-center lg:mx-auto lg:mb-12">
+                        <h2
+                            className="mb-4 font-bold tracking-tight text-white text-xl sm:text-5xl">
+                            Besoin d'un renseignement?
+                        </h2>
                     </div>
                     <div className="flex items-stretch justify-center">
                         <div className="grid lg:grid-cols-2">
