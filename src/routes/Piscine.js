@@ -49,7 +49,7 @@ export default function Piscine() {
                         Afin d’éviter ce phénomène et de se retrouver avec des travaux onéreux, nous proposons une réfection complète du Gel-Coat de votre piscine.
                     </p>
                 </section>
-                <section className="flex justify-center items-center flex-none w-[calc(450px)] m-4 lg:m-8">
+                <section className="flex justify-center items-center flex-none  lg:w-[calc(450px)] m-4 lg:m-8">
                     <img className="rounded-lg shadow-lg" src="projet-3-3.png" alt="" />
                 </section>
             </main>

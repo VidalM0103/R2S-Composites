@@ -8,7 +8,7 @@ export default function Expertise() {
             <main className="text-white h-[calc(100vh-180px)] font-poppins">
                 <section className="bg-gray-800 p-4 lg:p-8 lg:grid lg:grid-cols-3 h-[calc(100vh-180px)]">
 
-                    <div className="flex flex-col justify-evenly items-start p-4 col-span-2 text-lg">
+                    <div className="flex flex-col justify-evenly items-start col-span-2 text-lg">
                         <section>
                             <h3 className="text-2xl font-bold text-yellow-300 mb-2">Expertise de pré-Transactionnelle</h3>
                             <p className="mb-4">L’expertise avant achat donne lieu à la rédaction d’un rapport basé sur les observations

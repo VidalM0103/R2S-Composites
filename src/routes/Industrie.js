@@ -37,7 +37,7 @@ export default function Industrie() {
                         </div>
                     </div>
                 </section>
-                <section className="flex justify-center items-center flex-none w-[calc(450px)] m-8">
+                <section className="flex justify-center items-center flex-none lg:w-[calc(450px)] m-8">
                     <img className="rounded-lg shadow-lg" src="chantier-3-1.png" alt="" />
                 </section>
             </main>
