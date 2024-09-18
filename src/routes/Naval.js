@@ -12,7 +12,7 @@ export default function Naval() {
                     <p className="text-justify text-lg max-w-[calc(1000px)]">L’entreprise R2S Composites basée à La Seyne sur Mer (83) est spécialisée dans les réparations composites ainsi que l’entretien de votre bateau grâce a une équipe de professionnels à votre service, nos professionnels vous garantissent des prestations sur-mesure, adaptées à vos besoins ainsi qu’aux caractéristiques de votre bateau.</p>
                 </section>
                 <section className="lg:min-h-[calc(100vh-180px)] flex flex-col items-center justify-center flex-none lg:w-[calc(600px)] lg:mx-8">
-                    <div className="h-[calc(600px)] w-[calc(600px)] flex items-center justify-center">
+                    <div className="h-[calc(400px)] w-[calc(400px)] lg:h-[calc(600px)] lg:w-[calc(600px)] flex items-center justify-center">
                         <Carousel slide={false}>
                             <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                                 <div className="absolute top-0 bg-gray-700 bg-opacity-75 w-full flex items-center justify-center min-h-[calc(75px)]">
