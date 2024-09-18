@@ -2,7 +2,7 @@ export default function Expertise() {
     return (
         <>
             <header className="bg-yellow-300 text-white p-6 mt-24 font-poppins">
-                <h1 className="text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Expertise Maritime - Présentation</h1>
+                <h1 className="text-xl lg:text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Expertise Maritime - Présentation</h1>
             </header>
 
             <main className="text-white h-[calc(100vh-180px)] font-poppins">
@@ -22,7 +22,7 @@ export default function Expertise() {
                             <p className="mb-4">Cette expertise donne lieu à la rédaction d’un rapport basé sur les observations réalisées
                                 sur le bateau. L’état des éléments sinistrés est évalué, les désordres décelés sont répertoriés et une
                                 liste de spécifications des travaux à effectuer est établie et chiffrée. Cette expertise peut être
-                                l’objet d’une contre – expertise.</p>
+                                l’objet d’une contre–expertise.</p>
                         </section>
 
                         <section>
