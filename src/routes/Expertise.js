@@ -6,15 +6,8 @@ export default function Expertise() {
             </header>
 
             <main className="text-white h-[calc(100vh-180px)] font-poppins">
-                <section className="bg-gray-800 p-8 grid grid-cols-3 h-[calc(100vh-180px)]">
-                    <div className="flex flex-col gap-4 items-center justify-evenly col-span-1">
-                        <div >
-                            <img src="expertise-bateau-sonde.jpeg" alt="" className="rounded-lg shadow-lg max-h-[350px]" />
-                        </div>
-                        <div className="flex items-center justify-center col-span-1">
-                            <img src="expertise-bateau-reunion.jpeg" alt="" className="rounded-lg shadow-lg max-h-[350px]" />
-                        </div>
-                    </div>
+                <section className="bg-gray-800 p-4 lg:p-8 lg:grid lg:grid-cols-3 h-[calc(100vh-180px)]">
+
                     <div className="flex flex-col justify-evenly items-start p-4 col-span-2 text-lg">
                         <section>
                             <h3 className="text-2xl font-bold text-yellow-300 mb-2">Expertise de pré-Transactionnelle</h3>
@@ -47,6 +40,14 @@ export default function Expertise() {
                             <p>Cette expertise permettra de contrôler l’humidité de la matrice, matérialisant éventuellement un phénomène
                                 osmotique.</p>
                         </section>
+                    </div>
+                    <div className="flex flex-col gap-4 items-center justify-evenly col-span-1">
+                        <div >
+                            <img src="expertise-bateau-sonde.jpeg" alt="" className="rounded-lg shadow-lg max-h-[350px]" />
+                        </div>
+                        <div className="flex items-center justify-center col-span-1">
+                            <img src="expertise-bateau-reunion.jpeg" alt="" className="rounded-lg shadow-lg max-h-[350px]" />
+                        </div>
                     </div>
                 </section>
             </main>
