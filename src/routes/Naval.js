@@ -7,7 +7,7 @@ export default function Naval() {
                 <h1 className="text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Naval - Présentation</h1>
             </header>
 
-            <main className="text-white bg-gray-800 font-poppins min-h-[calc(100vh-180px)] flex flex-col lg:flex-row">
+            <main className="text-white bg-gray-800 font-poppins min-h-[calc(100vh-180px)] flex flex-col lg:flex-row justify-center items-center">
                 <section className="lg:min-h-[calc(100vh-180px)] flex flex-col items-center justify-center flex-1 p-4 lg:p-8">
                     <p className="text-justify text-lg max-w-[calc(1000px)]">L’entreprise R2S Composites basée à La Seyne sur Mer (83) est spécialisée dans les réparations composites ainsi que l’entretien de votre bateau grâce a une équipe de professionnels à votre service, nos professionnels vous garantissent des prestations sur-mesure, adaptées à vos besoins ainsi qu’aux caractéristiques de votre bateau.</p>
                 </section>
