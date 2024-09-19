@@ -46,10 +46,10 @@ export default function ExpertiseDevis() {
             <header className="bg-yellow-300 p-6 mt-24">
                 <h1 className="text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Expertise - Devis</h1>
             </header>
-            <section className="font-poppins min-h-[calc(100vh-180px)] w-full bg-slate-800 flex justify-around items-center" id="contact">
-                <div className="p-5 w-2/3" id="form">
+            <main className="font-poppins min-h-[calc(100vh-180px)] bg-slate-800 flex justify-around items-center" id="contact">
+                <div className="p-4 w-[calc(450px)] lg:w-2/3" id="form">
                     <form id="contactForm" onSubmit={onSubmit}>
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                             <div>
                                 <div className="mb-2 block">
                                     <Label theme={customForm.labelCustom} htmlFor="name" value="Nom" />
@@ -131,11 +131,11 @@ export default function ExpertiseDevis() {
                                 <div />
                                 <TextInput theme={customForm.textInputCustom} color="primary" id="expertise" type="text" name="Expertise demandée" />
                             </div>
-                            <div className="col-span-2">
+                            <div className="lg:col-span-2">
                                 <div className="mb-2 block">
                                     <Label theme={customForm.labelCustom} htmlFor="message" value="Message" />
                                 </div>
-                                <Textarea theme={customForm.textAreaInputCustom} color="primary" id="message" name="Message" className='min-h-28' />
+                                <Textarea theme={customForm.textAreaInputCustom} color="primary" id="message" name="Message" rows={4} />
                             </div>
                         </div>
                         <div className="mt-8 text-center flex flex-col items-center">
@@ -144,7 +144,7 @@ export default function ExpertiseDevis() {
                         </div>
                     </form >
                 </div >
-            </section >
+            </main>
         </>
     );
 }

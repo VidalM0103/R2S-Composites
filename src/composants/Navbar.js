@@ -78,7 +78,7 @@ const Navbar = () => {
                                           subMenus={
                                                 [
                                                       { name: "Présentation", link: "/R2S-Composites/piscine/" },
-                                                      { name: "Projets  ", link: "/R2S-Composites/piscine/realisations" },
+                                                      { name: "Projets ", link: "/R2S-Composites/piscine/realisations" },
                                                       { name: "Demander un devis", link: "/R2S-Composites/piscine/devis" }
                                                 ]
                                           } />
