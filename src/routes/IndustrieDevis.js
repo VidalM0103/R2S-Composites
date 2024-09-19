@@ -68,7 +68,7 @@ export default function IndustrieDevis() {
                 <h1 className="text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Industrie - Devis</h1>
             </header>
             <main className="font-poppins min-h-[calc(100vh-180px)] w-full bg-slate-800 flex flex-col justify-around items-center p-4" id="contact">
-                <form className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-[calc(450px)] lg:w-2/3" id="contactForm" onSubmit={onSubmit}>
+                <form className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-4/5 lg:w-2/3" id="contactForm" onSubmit={onSubmit}>
                     {listItems}
                 </form>
                 <div className="my-8 text-center flex flex-col items-center">

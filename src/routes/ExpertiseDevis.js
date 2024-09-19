@@ -46,104 +46,100 @@ export default function ExpertiseDevis() {
             <header className="bg-yellow-300 p-6 mt-24">
                 <h1 className="text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Expertise - Devis</h1>
             </header>
-            <main className="font-poppins min-h-[calc(100vh-180px)] bg-slate-800 flex justify-around items-center" id="contact">
-                <div className="p-4 w-[calc(450px)] lg:w-2/3" id="form">
-                    <form id="contactForm" onSubmit={onSubmit}>
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                            <div>
-                                <div className="mb-2 block">
-                                    <Label theme={customForm.labelCustom} htmlFor="name" value="Nom" />
-                                </div>
-                                <TextInput theme={customForm.textInputCustom} color="primary" id="name" type="text" name="Nom" required />
-                            </div>
-                            <div>
-                                <div className="mb-2 block">
-                                    <Label theme={customForm.labelCustom} htmlFor="firstname" value="Prénom" />
-                                </div>
-                                <TextInput theme={customForm.textInputCustom} color="primary" id="firstname" type="text" name="Prénom" />
-                            </div>
-                            <div>
-                                <div className="mb-2 block">
-                                    <Label theme={customForm.labelCustom} htmlFor="email" value="Email" />
-                                </div>
-                                <div />
-                                <TextInput theme={customForm.textInputCustom} color="primary" id="email" type="email" name="Email" />
-                            </div>
-                            <div>
-                                <div className="mb-2 block">
-                                    <Label theme={customForm.labelCustom} htmlFor="phone" value="Téléphone" />
-                                </div>
-                                <TextInput theme={customForm.textInputCustom} color="primary" id="phone" type="tel" name="Téléphone" />
-                            </div>
-                            <div>
-                                <div className="mb-2 block">
-                                    <Label theme={customForm.labelCustom} htmlFor="adresse" value="Adresse" />
-                                </div>
-                                <TextInput theme={customForm.textInputCustom} color="primary" id="addr" type="text" name="Adresse" />
-                            </div>
-                            <div>
-                                <div className="mb-2 block">
-                                    <Label theme={customForm.labelCustom} htmlFor="addrShip" value="Adresse du bateau" />
-                                </div>
-                                <TextInput theme={customForm.textInputCustom} color="primary" id="addrShip" type="text" name="Adresse du bateau" required />
-                            </div>
-                            <div>
-                                <div className="mb-2 block">
-                                    <Label theme={customForm.labelCustom} htmlFor="shipName" value="Nom du bateau" />
-                                </div>
-                                <div />
-                                <TextInput theme={customForm.textInputCustom} color="primary" id="shipName" type="text" name="Nom du bateau" />
-                            </div>
-                            <div>
-                                <div className="mb-2 block">
-                                    <Label theme={customForm.labelCustom} htmlFor="shipBrand" value="Marque du bateau" />
-                                </div>
-                                <div />
-                                <TextInput theme={customForm.textInputCustom} color="primary" id="shipBrand" type="text" name="Marque du bateau" />
-                            </div>
-                            <div className='mb-4'>
-                                <div className="mb-2 block">
-                                    <Label theme={customForm.labelCustom} htmlFor="lenghtShip" value="Taille du bateau" />
-                                </div>
-                                <div class="relative w-full">
-                                    <input type="number" id="input-lenghtShip" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-yellow-300 focus:border-yellow-300" value={valueMeterShip[1]} onChange={handleChange} min="4" max="100" step="1" name="Taille du bateau" />
-                                </div>
-                                <div class="relative">
-                                    <RangeSlider
-                                        className="single-thumb"
-                                        min={4}
-                                        step={1}
-                                        defaultValue={[4, valueMeterShip[1]]}
-                                        value={[4, valueMeterShip[1]]}
-                                        thumbsDisabled={[true, false]}
-                                        rangeSlideDisabled={true}
-                                        onInput={setValueMeterShip}
-                                    />
-                                    <span class="text-sm text-gray-900 dark:text-gray-400 absolute start-10 bottom-5">mètres</span>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400 absolute start-0 -bottom-6">4 mètres</span>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400 absolute end-0 -bottom-6">100 mètres</span>
-                                </div>
-                            </div>
-                            <div >
-                                <div className="mb-2 block">
-                                    <Label theme={customForm.labelCustom} htmlFor="expertise" value="Expertise demandée" />
-                                </div>
-                                <div />
-                                <TextInput theme={customForm.textInputCustom} color="primary" id="expertise" type="text" name="Expertise demandée" />
-                            </div>
-                            <div className="lg:col-span-2">
-                                <div className="mb-2 block">
-                                    <Label theme={customForm.labelCustom} htmlFor="message" value="Message" />
-                                </div>
-                                <Textarea theme={customForm.textAreaInputCustom} color="primary" id="message" name="Message" rows={4} />
-                            </div>
+            <main className="font-poppins min-h-[calc(100vh-180px)] bg-slate-800 flex flex-col justify-around items-center" id="contact">
+                <form className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 w-4/5 lg:w-2/3" id="contactForm" onSubmit={onSubmit}>
+                    <div>
+                        <div className="mb-2 block">
+                            <Label theme={customForm.labelCustom} htmlFor="name" value="Nom" />
                         </div>
-                        <div className="mt-8 text-center flex flex-col items-center">
-                            <button type="submit" className="w-60 btn-primary">Demander un devis</button>
-                            <span className="text-white">{result}</span>
+                        <TextInput theme={customForm.textInputCustom} color="primary" id="name" type="text" name="Nom" required />
+                    </div>
+                    <div>
+                        <div className="mb-2 block">
+                            <Label theme={customForm.labelCustom} htmlFor="firstname" value="Prénom" />
                         </div>
-                    </form >
-                </div >
+                        <TextInput theme={customForm.textInputCustom} color="primary" id="firstname" type="text" name="Prénom" />
+                    </div>
+                    <div>
+                        <div className="mb-2 block">
+                            <Label theme={customForm.labelCustom} htmlFor="email" value="Email" />
+                        </div>
+                        <div />
+                        <TextInput theme={customForm.textInputCustom} color="primary" id="email" type="email" name="Email" />
+                    </div>
+                    <div>
+                        <div className="mb-2 block">
+                            <Label theme={customForm.labelCustom} htmlFor="phone" value="Téléphone" />
+                        </div>
+                        <TextInput theme={customForm.textInputCustom} color="primary" id="phone" type="tel" name="Téléphone" />
+                    </div>
+                    <div>
+                        <div className="mb-2 block">
+                            <Label theme={customForm.labelCustom} htmlFor="adresse" value="Adresse" />
+                        </div>
+                        <TextInput theme={customForm.textInputCustom} color="primary" id="addr" type="text" name="Adresse" />
+                    </div>
+                    <div>
+                        <div className="mb-2 block">
+                            <Label theme={customForm.labelCustom} htmlFor="addrShip" value="Adresse du bateau" />
+                        </div>
+                        <TextInput theme={customForm.textInputCustom} color="primary" id="addrShip" type="text" name="Adresse du bateau" required />
+                    </div>
+                    <div>
+                        <div className="mb-2 block">
+                            <Label theme={customForm.labelCustom} htmlFor="shipName" value="Nom du bateau" />
+                        </div>
+                        <div />
+                        <TextInput theme={customForm.textInputCustom} color="primary" id="shipName" type="text" name="Nom du bateau" />
+                    </div>
+                    <div>
+                        <div className="mb-2 block">
+                            <Label theme={customForm.labelCustom} htmlFor="shipBrand" value="Marque du bateau" />
+                        </div>
+                        <div />
+                        <TextInput theme={customForm.textInputCustom} color="primary" id="shipBrand" type="text" name="Marque du bateau" />
+                    </div>
+                    <div className='mb-4'>
+                        <div className="mb-2 block">
+                            <Label theme={customForm.labelCustom} htmlFor="lenghtShip" value="Taille du bateau" />
+                        </div>
+                        <div class="relative w-full">
+                            <input type="number" id="input-lenghtShip" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-yellow-300 focus:border-yellow-300" value={valueMeterShip[1]} onChange={handleChange} min="4" max="100" step="1" name="Taille du bateau" />
+                        </div>
+                        <div class="relative">
+                            <RangeSlider
+                                className="single-thumb"
+                                min={4}
+                                step={1}
+                                defaultValue={[4, valueMeterShip[1]]}
+                                value={[4, valueMeterShip[1]]}
+                                thumbsDisabled={[true, false]}
+                                rangeSlideDisabled={true}
+                                onInput={setValueMeterShip}
+                            />
+                            <span class="text-sm text-gray-900 dark:text-gray-400 absolute start-10 bottom-5">mètres</span>
+                            <span class="text-sm text-gray-500 dark:text-gray-400 absolute start-0 -bottom-6">4 mètres</span>
+                            <span class="text-sm text-gray-500 dark:text-gray-400 absolute end-0 -bottom-6">100 mètres</span>
+                        </div>
+                    </div>
+                    <div >
+                        <div className="mb-2 block">
+                            <Label theme={customForm.labelCustom} htmlFor="expertise" value="Expertise demandée" />
+                        </div>
+                        <div />
+                        <TextInput theme={customForm.textInputCustom} color="primary" id="expertise" type="text" name="Expertise demandée" />
+                    </div>
+                    <div className="lg:col-span-2">
+                        <div className="mb-2 block">
+                            <Label theme={customForm.labelCustom} htmlFor="message" value="Message" />
+                        </div>
+                        <Textarea theme={customForm.textAreaInputCustom} color="primary" id="message" name="Message" rows={4} />
+                    </div>
+                </form >
+                <div className="mt-8 text-center flex flex-col items-center">
+                    <button type="submit" className="w-60 btn-primary">Demander un devis</button>
+                    <span className="text-white">{result}</span>
+                </div>
             </main>
         </>
     );
