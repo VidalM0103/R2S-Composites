@@ -4,8 +4,10 @@ import CustomFlowbiteReact from "../CustomFlowbiteReact.js"
 
 export default function NavalAchievements() {
     const customForm = CustomFlowbiteReact.customForm;
+    console.log("naval")
 
     useEffect(() => {
+        console.log("useEffect");
         let id = 0;
         const buttonPrev = document.getElementsByClassName('leftControl');
         const buttonNext = document.getElementsByClassName('rightControl');
@@ -13,6 +15,7 @@ export default function NavalAchievements() {
         const divImg = document.getElementsByClassName('item-photo');
 
         if (window.screen.width <= 1024) {
+            console.log("mobile");
             buttonNext[0].addEventListener("click", (e) => {
                 let height = 0;
 
