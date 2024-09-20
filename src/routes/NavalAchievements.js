@@ -4,18 +4,22 @@ import CustomFlowbiteReact from "../CustomFlowbiteReact.js"
 
 export default function NavalAchievements() {
     const customForm = CustomFlowbiteReact.customForm;
-    console.log("naval");
+    const [width, setWidth] = useState(window.innerWidth);
 
     useEffect(() => {
-        console.log("useEffect");
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    useEffect(() => {
         let id = 0;
         const buttonPrev = document.getElementsByClassName('leftControl');
         const buttonNext = document.getElementsByClassName('rightControl');
         const carrousel = document.getElementById('main');
         const divImg = document.getElementsByClassName('item-photo');
 
-        if (window.screen.width <= 1024) {
-            console.log("mobile");
+        if (width <= 1024) {
             buttonNext[0].addEventListener("click", (e) => {
                 let height = 0;
 
@@ -47,8 +51,6 @@ export default function NavalAchievements() {
                 window.scrollTo(0, 0);
             })
         } else {
-            console.log("computer");
-
             buttonNext[0].addEventListener("click", (e) => {
                 if (id < divImg.length - 1)
                     id = id + 1;
