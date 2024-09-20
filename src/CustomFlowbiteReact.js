@@ -29,8 +29,8 @@ const CustomFlowbiteReact = {
         galeryCustom: {
             "root": {
                 "base": "relative h-full w-full",
-                "leftControl": "fixed lg:absolute left-0 top-[calc(50%)] lg:top-0 flex lg:h-full lg:items-center lg:justify-center px-4 focus:outline-none",
-                "rightControl": "fixed lg:absolute right-0 top-[calc(50%)] lg:top-0 flex lg:h-full lg:items-center lg:justify-center px-4 focus:outline-none"
+                "leftControl": "leftControl fixed lg:absolute left-0 top-[calc(50%)] lg:top-0 flex lg:h-full lg:items-center lg:justify-center px-4 focus:outline-none",
+                "rightControl": "rightControl fixed lg:absolute right-0 top-[calc(50%)] lg:top-0 flex lg:h-full lg:items-center lg:justify-center px-4 focus:outline-none"
             },
             "indicators": {
                 "active": {
@@ -41,7 +41,7 @@ const CustomFlowbiteReact = {
                 "wrapper": "absolute bottom-5 left-1/2 flex -translate-x-1/2 space-x-3"
             },
             "item": {
-                "base": "absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2",
+                "base": "item-photo absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2",
                 "wrapper": {
                     "off": "w-full flex-shrink-0 transform cursor-default snap-center",
                     "on": "w-full flex-shrink-0 transform cursor-grab snap-center"
