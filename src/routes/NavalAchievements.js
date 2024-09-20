@@ -32,7 +32,6 @@ export default function NavalAchievements() {
                     height = height + img.height;
                 }
                 carrousel.setAttribute("style", "height:" + height + "px");
-                console.log(height, id);
                 window.scrollTo(0, 0);
             })
 
@@ -69,9 +68,9 @@ export default function NavalAchievements() {
     return (
         <>
             <header className="bg-yellow-300 text-white p-6 mt-24 font-poppins">
-                <h1 className="text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Naval - Réalisations</h1>
+                <h1 className="text-xl lg:text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Naval - Réalisations</h1>
             </header>
-            <main id="main" className="text-white bg-gray-800 font-poppins h-[calc(1800px)] lg:!h-[calc(100vh-180px)] flex items-center justify-center w-full">
+            <main id="main" className="text-white bg-gray-800 font-poppins h-[calc(1800px)] min-h-[calc(100vh-180px)] lg:!h-[calc(100vh-180px)] flex items-center justify-center w-full">
                 <Carousel theme={customForm.galeryCustom} slide={false}>
                     <div className="h-full flex flex-col lg:flex-row justify-evenly items-center lg:px-[calc(72px)]">
                         <img className="lg:max-w-[calc(33%)]" src="chantier-1-1.png" alt="" />
