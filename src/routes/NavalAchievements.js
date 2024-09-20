@@ -4,7 +4,7 @@ import CustomFlowbiteReact from "../CustomFlowbiteReact.js"
 
 export default function NavalAchievements() {
     const customForm = CustomFlowbiteReact.customForm;
-    console.log("naval")
+    console.log("naval");
 
     useEffect(() => {
         console.log("useEffect");
@@ -47,6 +47,8 @@ export default function NavalAchievements() {
                 window.scrollTo(0, 0);
             })
         } else {
+            console.log("computer");
+
             buttonNext[0].addEventListener("click", (e) => {
                 if (id < divImg.length - 1)
                     id = id + 1;
