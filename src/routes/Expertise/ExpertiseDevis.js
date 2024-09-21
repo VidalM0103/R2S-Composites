@@ -4,15 +4,44 @@ import 'react-range-slider-input/dist/style.css';
 import {
     Label,
     Textarea,
-    TextInput,
+    TextInput
 } from "flowbite-react";
 import CustomFlowbiteReact from "../../CustomFlowbiteReact.js";
+import Header from "../../composants/Header";
 
 
 export default function ExpertiseDevis() {
     const [result, setResult] = useState("");
     const [valueMeterShip, setValueMeterShip] = useState([0, 4]);
     const customForm = CustomFlowbiteReact.customForm;
+
+    const formFields = [
+        { id: 'name', label: 'Nom', type: 'text', required: true },
+        { id: 'firstname', label: 'Prénom', type: 'text' },
+        { id: 'email', label: 'Email', type: 'email' },
+        { id: 'phone', label: 'Téléphone', type: 'tel' },
+        { id: 'addr', label: 'Adresse', type: 'text' },
+        { id: 'addrShip', label: 'Adresse du bateau', type: 'text', required: true },
+        { id: 'shipName', label: 'Nom du bateau', type: 'text' },
+        { id: 'shipBrand', label: 'Marque du bateau', type: 'text' },
+        { id: 'expertise', label: 'Expertise demandée', type: 'text' },
+    ];
+
+    const renderFormField = (field) => (
+        <div key={field.id}>
+            <div className="block mb-2">
+                <Label theme={customForm.labelCustom} htmlFor={field.id} value={field.label} />
+            </div>
+            <TextInput
+                theme={customForm.textInputCustom}
+                color="primary"
+                id={field.id}
+                type={field.type}
+                name={field.label}
+                required={field.required}
+            />
+        </div>
+    );
 
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -43,70 +72,28 @@ export default function ExpertiseDevis() {
 
     return (
         <>
-            <header className="bg-yellow-300 p-6 mt-24">
-                <h1 className="text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Expertise - Devis</h1>
-            </header>
-            <main className="font-poppins min-h-[calc(100vh-180px)] bg-slate-800 flex flex-col justify-around items-center" id="contact">
-                <form className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 w-4/5 lg:w-2/3" id="contactForm" onSubmit={onSubmit}>
-                    <div>
-                        <div className="mb-2 block">
-                            <Label theme={customForm.labelCustom} htmlFor="name" value="Nom" />
-                        </div>
-                        <TextInput theme={customForm.textInputCustom} color="primary" id="name" type="text" name="Nom" required />
-                    </div>
-                    <div>
-                        <div className="mb-2 block">
-                            <Label theme={customForm.labelCustom} htmlFor="firstname" value="Prénom" />
-                        </div>
-                        <TextInput theme={customForm.textInputCustom} color="primary" id="firstname" type="text" name="Prénom" />
-                    </div>
-                    <div>
-                        <div className="mb-2 block">
-                            <Label theme={customForm.labelCustom} htmlFor="email" value="Email" />
-                        </div>
-                        <div />
-                        <TextInput theme={customForm.textInputCustom} color="primary" id="email" type="email" name="Email" />
-                    </div>
-                    <div>
-                        <div className="mb-2 block">
-                            <Label theme={customForm.labelCustom} htmlFor="phone" value="Téléphone" />
-                        </div>
-                        <TextInput theme={customForm.textInputCustom} color="primary" id="phone" type="tel" name="Téléphone" />
-                    </div>
-                    <div>
-                        <div className="mb-2 block">
-                            <Label theme={customForm.labelCustom} htmlFor="adresse" value="Adresse" />
-                        </div>
-                        <TextInput theme={customForm.textInputCustom} color="primary" id="addr" type="text" name="Adresse" />
-                    </div>
-                    <div>
-                        <div className="mb-2 block">
-                            <Label theme={customForm.labelCustom} htmlFor="addrShip" value="Adresse du bateau" />
-                        </div>
-                        <TextInput theme={customForm.textInputCustom} color="primary" id="addrShip" type="text" name="Adresse du bateau" required />
-                    </div>
-                    <div>
-                        <div className="mb-2 block">
-                            <Label theme={customForm.labelCustom} htmlFor="shipName" value="Nom du bateau" />
-                        </div>
-                        <div />
-                        <TextInput theme={customForm.textInputCustom} color="primary" id="shipName" type="text" name="Nom du bateau" />
-                    </div>
-                    <div>
-                        <div className="mb-2 block">
-                            <Label theme={customForm.labelCustom} htmlFor="shipBrand" value="Marque du bateau" />
-                        </div>
-                        <div />
-                        <TextInput theme={customForm.textInputCustom} color="primary" id="shipBrand" type="text" name="Marque du bateau" />
-                    </div>
+            <Header menuTitle="R2S Expertise - Devis" />
+            <main className="flex flex-col justify-around items-center min-h-[calc(100vh-184px)] p-4 lg:p-8">
+                <form className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-4/5 lg:w-2/3" onSubmit={onSubmit}>
+                    {formFields.map(renderFormField)}
                     <div className='mb-4'>
                         <div className="mb-2 block">
                             <Label theme={customForm.labelCustom} htmlFor="lenghtShip" value="Taille du bateau" />
                         </div>
-                        <div class="relative w-full">
-                            <input type="number" id="input-lenghtShip" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-yellow-300 focus:border-yellow-300" value={valueMeterShip[1]} onChange={handleChange} min="4" max="100" step="1" name="Taille du bateau" />
+                        <div className="relative w-full">
+                            <input
+                                type="number"
+                                id="input-lenghtShip"
+                                className="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-yellow-300 focus:border-yellow-300"
+                                value={valueMeterShip[1]}
+                                onChange={handleChange}
+                                min="4"
+                                max="100"
+                                step="1"
+                                name="Taille du bateau"
+                            />
                         </div>
-                        <div class="relative">
+                        <div className="relative">
                             <RangeSlider
                                 className="single-thumb"
                                 min={4}
@@ -117,29 +104,23 @@ export default function ExpertiseDevis() {
                                 rangeSlideDisabled={true}
                                 onInput={setValueMeterShip}
                             />
-                            <span class="text-sm text-gray-900 dark:text-gray-400 absolute start-10 bottom-5">mètres</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 absolute start-0 -bottom-6">4 mètres</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 absolute end-0 -bottom-6">100 mètres</span>
+                            <span className="text-sm text-gray-900 absolute start-10 bottom-5">mètres</span>
+                            <span className="text-sm text-gray-400 absolute start-0 -bottom-6">4 mètres</span>
+                            <span className="text-sm text-gray-400 absolute end-0 -bottom-6">100 mètres</span>
                         </div>
                     </div>
-                    <div >
-                        <div className="mb-2 block">
-                            <Label theme={customForm.labelCustom} htmlFor="expertise" value="Expertise demandée" />
-                        </div>
-                        <div />
-                        <TextInput theme={customForm.textInputCustom} color="primary" id="expertise" type="text" name="Expertise demandée" />
-                    </div>
-                    <div className="lg:col-span-2">
-                        <div className="mb-2 block">
+                    <div className="lg:col-span-2 mb-4">
+                        <div className="block mb-2">
                             <Label theme={customForm.labelCustom} htmlFor="message" value="Message" />
                         </div>
                         <Textarea theme={customForm.textAreaInputCustom} color="primary" id="message" name="Message" rows={4} />
                     </div>
-                </form >
-                <div className="mt-8 text-center flex flex-col items-center">
-                    <button type="submit" className="w-60 btn-primary">Demander un devis</button>
-                    <span className="text-white">{result}</span>
-                </div>
+                    <div className="flex flex-col items-center lg:col-span-2 text-center mb-4">
+                        <button type="submit" className="w-60 btn-primary">Demander un devis</button>
+                        <span className="text-white mt-2">{result}</span>
+                    </div>
+                </form>
+
             </main>
         </>
     );

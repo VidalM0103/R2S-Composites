@@ -5,6 +5,7 @@ import {
     TextInput
 } from "flowbite-react";
 import CustomFlowbiteReact from "../../CustomFlowbiteReact.js";
+import Header from "../../composants/Header";
 
 
 export default function IndustrieDevis() {
@@ -25,7 +26,7 @@ export default function IndustrieDevis() {
 
     const listItems = formItems.map((item) =>
         <div className={item.type === "TextArea" && "lg:col-span-2"} key={item.label}>
-            <div className="mb-2 block">
+            <div className="block mb-2">
                 <Label theme={customForm.labelCustom} htmlFor={item.label} value={item.label} />
             </div>
             {
@@ -64,17 +65,16 @@ export default function IndustrieDevis() {
 
     return (
         <>
-            <header className="bg-yellow-300 text-white p-6 mt-24 font-poppins">
-                <h1 className="text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Industrie - Devis</h1>
-            </header>
-            <main className="font-poppins min-h-[calc(100vh-180px)] w-full bg-slate-800 flex flex-col justify-around items-center p-4" id="contact">
+            <Header menuTitle="R2S Industrie - Devis" />
+            <main className="flex flex-col justify-around items-center min-h-[calc(100vh-184px)] w-full p-4 lg:p-8" id="contact">
                 <form className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-4/5 lg:w-2/3" id="contactForm" onSubmit={onSubmit}>
                     {listItems}
+                    <div className="flex flex-col items-center lg:col-span-2 text-center mb-4">
+                        <button type="submit" className="w-60 btn-primary">Demander un devis</button>
+                        <span className='text-white mt-2'>{result}</span>
+                    </div>
                 </form>
-                <div className="my-8 text-center flex flex-col items-center">
-                    <button type="submit" className="w-60 btn-primary">Demander un devis</button>
-                    <span className="text-white">{result}</span>
-                </div>
+
             </main >
         </>
     );
