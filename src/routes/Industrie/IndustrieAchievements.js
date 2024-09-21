@@ -1,6 +1,7 @@
 import { Carousel } from "flowbite-react"
 import { useEffect, useState } from "react"
 import CustomFlowbiteReact from "../../CustomFlowbiteReact.js"
+import Header from "../../composants/Header.js";
 
 export default function IndustrieAchievements() {
     const customForm = CustomFlowbiteReact.customForm;
@@ -67,24 +68,24 @@ export default function IndustrieAchievements() {
 
     return (
         <>
-            <header className="bg-yellow-300 text-white p-6 mt-24 font-poppins">
-                <h1 className="text-xl lg:text-3xl font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)]">R2S Industrie - Réalisations</h1>
-            </header>
-
-            <main id="main" className="text-white bg-gray-800 font-poppins h-[calc(1200px)] min-h-[calc(100vh-180px)] lg:!h-[calc(100vh-180px)] flex items-center justify-center w-full">
+            <Header menuTitle="R2S Industrie - Réalisations" />
+            <main className="flex items-center justify-center h-[calc(1200px)] min-h-[calc(100vh-180px)] lg:!h-[calc(100vh-180px)] w-full">
                 <Carousel theme={customForm.galeryCustom} slide={false}>
-                    <div className="h-full flex flex-col lg:flex-row justify-evenly items-center lg:px-[calc(72px)]">
-                        <img className="lg:max-w-[calc(33%)]" src="chantier-1-1.png" alt="" />
-                        <img className="lg:max-w-[calc(33%)]" src="chantier-1-2.png" alt="" />
-                    </div>
-                    <div className="h-full flex flex-col lg:flex-row justify-evenly items-center lg:px-[calc(72px)]">
-                        <img className="lg:max-w-[calc(33%)]" src="chantier-2-1.png" alt="" />
-                        <img className="lg:max-w-[calc(33%)]" src="chantier-2-2.png" alt="" />
-                    </div>
-                    <div className="h-full flex flex-col lg:flex-row justify-evenly items-center lg:px-[calc(72px)]">
-                        <img className="lg:max-w-[calc(33%)]" src="chantier-3-1.png" alt="" />
-                        <img className="lg:max-w-[calc(33%)]" src="chantier-3-2.png" alt="" />
-                    </div>
+                    {
+                        [
+                            ["chantier-1-1.png", "chantier-1-2.png"],
+                            ["chantier-2-1.png", "chantier-2-2.png"],
+                            ["chantier-3-1.png", "chantier-3-2.png"]
+                        ].map((item, index) => (
+                            <div key={index} className="flex flex-col lg:flex-row justify-evenly items-center h-full lg:px-[calc(72px)]">
+                                {
+                                    item.map((img, indexImg) => (
+                                        <img key={indexImg} className="lg:max-w-[calc(33%)]" src={img} alt="" />
+                                    ))
+                                }
+                            </div>
+                        ))
+                    }
                 </Carousel>
             </main>
         </>
