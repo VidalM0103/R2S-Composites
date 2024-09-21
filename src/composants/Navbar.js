@@ -1,7 +1,47 @@
 import { Link } from "react-router-dom"
 import Dropdown from "./Dropdown";
+import React from "react";
 
 const Navbar = () => {
+      const navItems = [
+            { type: 'link', title: 'Accueil', path: '/R2S-Composites/' },
+            {
+                  type: 'dropdown',
+                  title: 'R2S Expertise',
+                  items: [
+                        { name: 'Présentation', link: '/R2S-Composites/expertise/' },
+                        { name: 'Demander un devis', link: '/R2S-Composites/expertise/devis' }
+                  ]
+            },
+            {
+                  type: 'dropdown',
+                  title: 'R2S Naval',
+                  items: [
+                        { name: 'Présentation', link: '/R2S-Composites/naval/' },
+                        { name: 'Réalisations', link: '/R2S-Composites/naval/realisations/' },
+                        { name: 'Demander un devis', link: '/R2S-Composites/naval/devis' }
+                  ]
+            },
+            {
+                  type: 'dropdown',
+                  title: 'R2S Piscine',
+                  items: [
+                        { name: 'Présentation', link: '/R2S-Composites/piscine/' },
+                        { name: 'Projets', link: '/R2S-Composites/piscine/realisations' },
+                        { name: 'Demander un devis', link: '/R2S-Composites/piscine/devis' }
+                  ]
+            },
+            {
+                  type: 'dropdown',
+                  title: 'R2S Industrie',
+                  items: [
+                        { name: 'Présentation', link: '/R2S-Composites/industrie/' },
+                        { name: 'Réalisations', link: '/R2S-Composites/industrie/realisations' },
+                        { name: 'Demander un devis', link: '/R2S-Composites/industrie/devis' }
+                  ]
+            },
+            { type: 'link', title: 'Contact', path: '/R2S-Composites/contact/' }
+      ];
       function closeMenu() {
             const menu = document.getElementById('menu-toggle');
             if (menu) {
@@ -28,7 +68,8 @@ const Navbar = () => {
             <nav className="fixed z-20 w-full top-0 start-0 bg-gray-900 border-gray-700 text-lg">
                   <div className="flex lg:flex-wrap lg:items-center lg:justify-between">
                         <input className="peer hidden" type="checkbox" id="menu-toggle" />
-                        <svg onClick={toggleMenu}
+                        <svg
+                              onClick={toggleMenu}
                               className="animate-[wiggle_2s_linear_infinite] fill-white cursor-pointer lg:hidden block absolute top-7 right-7"
                               xmlns="http://www.w3.org/2000/svg"
                               width="40"
@@ -42,64 +83,26 @@ const Navbar = () => {
                               <img src={process.env.PUBLIC_URL + "/R2S-Composites-Fond-Transparent.png"} className="h-24" alt="R2S Logo" />
                         </Link>
                         <ul className="hidden lg:!flex lg:!flex-row lg:!static bg-slate-900 lg:!bg-none border-[calc(1px)] border-gray-800 lg:!border-none peer-checked:ml-0 peer-checked:flex peer-checked:flex-col peer-checked:absolute peer-checked:top-[calc(96px)] peer-checked:right-[calc(0px)] lg:p-4">
-                              <li>
-                                    <Link onClick={closeMenu} to="/R2S-Composites/" className="block p-4 hover:text-yellow-300">Accueil</Link>
-                              </li>
-                              <hr className="block lg:hidden" />
-                              <li className="group inline-block relative">
-                                    <Dropdown ulId="1"
-                                          menuTitle="R2S Expertise"
-                                          subMenus={
-                                                [
-                                                      { name: "Présentation", link: "/R2S-Composites/expertise/" },
-                                                      { name: "Demander un devis", link: "/R2S-Composites/expertise/devis" }
-                                                ]
-                                          } />
-                              </li>
-                              <hr className="block lg:hidden" />
-                              <li className="group inline-block relative">
-                                    <Dropdown ulId="2"
-                                          menuTitle="R2S Naval"
-                                          subMenus={
-                                                [
-                                                      { name: "Présentation", link: "/R2S-Composites/naval/" },
-                                                      { name: "Réalisations", link: "/R2S-Composites/naval/realisations/" },
-                                                      { name: "Demander un devis", link: "/R2S-Composites/naval/devis" }
-                                                ]
-                                          } />
-                              </li>
-                              <hr className="block lg:hidden" />
-                              <li className="group inline-block relative">
-                                    <Dropdown ulId="3"
-                                          menuTitle="R2S Piscine"
-                                          subMenus={
-                                                [
-                                                      { name: "Présentation", link: "/R2S-Composites/piscine/" },
-                                                      { name: "Projets ", link: "/R2S-Composites/piscine/realisations" },
-                                                      { name: "Demander un devis", link: "/R2S-Composites/piscine/devis" }
-                                                ]
-                                          } />
-                              </li>
-                              <hr className="block lg:hidden" />
-                              <li className="group inline-block relative">
-                                    <Dropdown ulId="4"
-                                          menuTitle="R2S Industrie"
-                                          subMenus={
-                                                [
-                                                      { name: "Présentation", link: "/R2S-Composites/industrie/" },
-                                                      { name: "Réalisations", link: "/R2S-Composites/industrie/realisations" },
-                                                      { name: "Demander un devis", link: "/R2S-Composites/industrie/devis" }
-                                                ]
-                                          } />
-                              </li>
-                              <hr className="block lg:hidden" />
-                              <li>
-                                    <Link onClick={closeMenu} to="/R2S-Composites/contact/" className="block p-4 hover:text-yellow-300">Contact</Link>
-                              </li>
+                              {navItems.map((item, index) => (
+                                    <React.Fragment key={item.title}>
+                                          {item.type === 'link' ? (
+                                                <li>
+                                                      <Link onClick={closeMenu} to={item.path} className="block p-4 hover:text-yellow-300">
+                                                            {item.title}
+                                                      </Link>
+                                                </li>
+                                          ) : (
+                                                <li className="group inline-block relative">
+                                                      <Dropdown ulId={index + 1} menuTitle={item.title} subMenus={item.items} />
+                                                </li>
+                                          )}
+                                          {index < navItems.length - 1 && <hr className="block lg:hidden" />}
+                                    </React.Fragment>
+                              ))}
                         </ul>
                   </div>
-            </nav >
-      )
-}
+            </nav>
+      );
+};
 
 export default Navbar;
