@@ -109,7 +109,7 @@ export default function ExpertiseDevis() {
                             <span className="text-sm text-gray-400 absolute end-0 -bottom-6">100 mètres</span>
                         </div>
                     </div>
-                    <div className="lg:col-span-2 mb-4">
+                    <div className="lg:col-span-2">
                         <div className="block mb-2">
                             <Label theme={customForm.labelCustom} htmlFor="message" value="Message" />
                         </div>
