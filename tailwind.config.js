@@ -17,7 +17,7 @@ module.exports = {
         poppins: ["Poppins", ...defaultTheme.fontFamily.sans]
       },
       backgroundImage: {
-        'hero': "url('../public/landingPage/harbor.jpg')"
+        'hero': "url('/public/landingPage/harbor.jpg')"
       },
       colors: {
         primary: "#FACA15",

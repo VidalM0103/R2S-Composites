@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"
 import Dropdown from "./Dropdown";
 
 const Navbar = () => {
-
       function closeMenu() {
             const menu = document.getElementById('menu-toggle');
             if (menu) {
@@ -14,7 +13,6 @@ const Navbar = () => {
                   listUl[i].style.display = "none";
             }
       }
-
       function toggleMenu() {
             const menu = document.getElementById('menu-toggle');
             if (menu) {
@@ -27,10 +25,9 @@ const Navbar = () => {
       }
 
       return (
-            <nav className="bg-gray-900 border-gray-700 text-white font-semibold fixed w-full z-20 top-0 start-0 border-b font-poppins">
+            <nav className="fixed z-20 w-full top-0 start-0 bg-gray-900 border-gray-700 text-lg">
                   <div className="flex lg:flex-wrap lg:items-center lg:justify-between">
                         <input className="peer hidden" type="checkbox" id="menu-toggle" />
-
                         <svg onClick={toggleMenu}
                               className="animate-[wiggle_2s_linear_infinite] fill-white cursor-pointer lg:hidden block absolute top-7 right-7"
                               xmlns="http://www.w3.org/2000/svg"
@@ -41,14 +38,14 @@ const Navbar = () => {
                               <title>menu</title>
                               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                         </svg>
-                        <Link className="space-x-3" onClick={closeMenu} to="/R2S-Composites/">
+                        <Link onClick={closeMenu} to="/R2S-Composites/">
                               <img src={process.env.PUBLIC_URL + "/R2S-Composites-Fond-Transparent.png"} className="h-24" alt="R2S Logo" />
                         </Link>
-                        <ul className="hidden bg-slate-900 lg:!flex lg:!flex-row lg:!static lg:!bg-none peer-checked:ml-0 peer-checked:flex peer-checked:flex-col peer-checked:absolute peer-checked:top-[calc(96px)] peer-checked:right-[calc(0px)] font-medium lg:p-4 border-[calc(1px)] border-gray-800 lg:!border-none">
+                        <ul className="hidden lg:!flex lg:!flex-row lg:!static bg-slate-900 lg:!bg-none border-[calc(1px)] border-gray-800 lg:!border-none peer-checked:ml-0 peer-checked:flex peer-checked:flex-col peer-checked:absolute peer-checked:top-[calc(96px)] peer-checked:right-[calc(0px)] lg:p-4">
                               <li>
-                                    <Link onClick={closeMenu} to="/R2S-Composites/" className="block py-4 px-4 hover:text-yellow-300">Accueil</Link>
+                                    <Link onClick={closeMenu} to="/R2S-Composites/" className="block p-4 hover:text-yellow-300">Accueil</Link>
                               </li>
-                              <hr className="block lg:hidden text-white" />
+                              <hr className="block lg:hidden" />
                               <li className="group inline-block relative">
                                     <Dropdown ulId="1"
                                           menuTitle="R2S Expertise"
@@ -59,7 +56,7 @@ const Navbar = () => {
                                                 ]
                                           } />
                               </li>
-                              <hr className="block lg:hidden text-white" />
+                              <hr className="block lg:hidden" />
                               <li className="group inline-block relative">
                                     <Dropdown ulId="2"
                                           menuTitle="R2S Naval"
@@ -71,7 +68,7 @@ const Navbar = () => {
                                                 ]
                                           } />
                               </li>
-                              <hr className="block lg:hidden text-white" />
+                              <hr className="block lg:hidden" />
                               <li className="group inline-block relative">
                                     <Dropdown ulId="3"
                                           menuTitle="R2S Piscine"
@@ -83,7 +80,7 @@ const Navbar = () => {
                                                 ]
                                           } />
                               </li>
-                              <hr className="block lg:hidden text-white" />
+                              <hr className="block lg:hidden" />
                               <li className="group inline-block relative">
                                     <Dropdown ulId="4"
                                           menuTitle="R2S Industrie"
@@ -95,9 +92,9 @@ const Navbar = () => {
                                                 ]
                                           } />
                               </li>
-                              <hr className="block lg:hidden text-white" />
+                              <hr className="block lg:hidden" />
                               <li>
-                                    <Link onClick={closeMenu} to="/R2S-Composites/contact/" className="block py-4 px-4 hover:text-yellow-300">Contact</Link>
+                                    <Link onClick={closeMenu} to="/R2S-Composites/contact/" className="block p-4 hover:text-yellow-300">Contact</Link>
                               </li>
                         </ul>
                   </div>

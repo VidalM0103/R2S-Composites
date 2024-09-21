@@ -1,6 +1,6 @@
 import { Carousel } from "flowbite-react"
 import { useEffect, useState } from "react"
-import CustomFlowbiteReact from "../CustomFlowbiteReact.js"
+import CustomFlowbiteReact from "../../CustomFlowbiteReact.js"
 
 export default function IndustrieAchievements() {
     const customForm = CustomFlowbiteReact.customForm;

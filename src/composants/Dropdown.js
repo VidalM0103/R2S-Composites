@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 
-/* subMenus => double array(name,link)*/
 const Dropdown = ({ ulId, menuTitle, subMenus }) => {
     function closeMenu() {
         const menu = document.getElementById('menu-toggle');
@@ -13,7 +12,6 @@ const Dropdown = ({ ulId, menuTitle, subMenus }) => {
             listUl[i].style.display = "none";
         }
     }
-
     function openMenu(e) {
         const ul = document.getElementById(ulId);
         if (ul) {
@@ -27,9 +25,8 @@ const Dropdown = ({ ulId, menuTitle, subMenus }) => {
 
     return (
         <>
-            <ul onClick={openMenu} className="hover:text-yellow-300 py-4 px-4 inline-flex items-center justify-between w-56 lg:w-auto">
+            <ul onClick={openMenu} className="inline-flex items-center justify-between w-56 lg:w-auto hover:text-yellow-300 p-4">
                 {menuTitle}
-                {/*<Link to={subMenus[0].link}>{menuTitle}</Link> */}
                 <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                 </svg>
@@ -38,7 +35,7 @@ const Dropdown = ({ ulId, menuTitle, subMenus }) => {
                 {
                     subMenus.map((subMenu, index) => (
                         <>
-                            <li className="h-12 pl-4 flex items-center hover:bg-gray-800" key={index}>
+                            <li className="flex items-center h-12 hover:bg-gray-800  pl-4 " key={index}>
                                 <Link onClick={closeMenu} to={subMenu.link} className="block py-2 px-3 hover:text-yellow-300">{subMenu.name}</Link>
                             </li>
                         </>

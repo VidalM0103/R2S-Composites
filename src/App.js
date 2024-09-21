@@ -1,19 +1,18 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from './composants/Navbar';
 import Home from './routes/Home';
-import About from './routes/About';
 import Contact from './routes/Contact';
-import Expertise from './routes/Expertise';
-import ExpertiseDevis from './routes/ExpertiseDevis';
-import Naval from './routes/Naval';
-import NavalAchievements from './routes/NavalAchievements';
-import NavalDevis from './routes/NavalDevis';
-import Piscine from './routes/Piscine';
-import PiscineAchievements from './routes/PiscineAchievements'
-import PiscineDevis from './routes/PiscineDevis';
-import Industrie from './routes/Industrie';
-import IndustrieAchievements from './routes/IndustrieAchievements';
-import IndustrieDevis from './routes/IndustrieDevis';
+import Expertise from './routes/Expertise/Expertise';
+import ExpertiseDevis from './routes/Expertise/ExpertiseDevis';
+import Naval from './routes/Naval/Naval';
+import NavalAchievements from './routes/Naval/NavalAchievements';
+import NavalDevis from './routes/Naval/NavalDevis';
+import Piscine from './routes/Piscine/Piscine';
+import PiscineAchievements from './routes/Piscine/PiscineAchievements'
+import PiscineDevis from './routes/Piscine/PiscineDevis';
+import Industrie from './routes/Industrie/Industrie';
+import IndustrieAchievements from './routes/Industrie/IndustrieAchievements';
+import IndustrieDevis from './routes/Industrie/IndustrieDevis';
 import React from 'react';
 
 function App() {
@@ -33,7 +32,6 @@ function App() {
         <Route path="/R2S-Composites/industrie" element={<Industrie />} />
         <Route path="/R2S-Composites/industrie/realisations" element={<IndustrieAchievements />} />
         <Route path="/R2S-Composites/industrie/devis" element={<IndustrieDevis />} />
-        <Route path="/R2S-Composites/about" element={<About />} />
         <Route path="/R2S-Composites/contact" element={<Contact />} />
       </Routes>
     </>

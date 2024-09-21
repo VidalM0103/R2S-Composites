@@ -6,7 +6,7 @@ import {
     Textarea,
     TextInput,
 } from "flowbite-react";
-import CustomFlowbiteReact from "../CustomFlowbiteReact.js";
+import CustomFlowbiteReact from "../../CustomFlowbiteReact.js";
 
 
 export default function ExpertiseDevis() {
