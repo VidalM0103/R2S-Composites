@@ -70,7 +70,7 @@ export default function PiscineAchievements() {
     return (
         <>
             <Header menuTitle="R2S Piscine - Projets" />
-            <main className="flex items-center justify-center h-[calc(1800px)] min-h-[calc(100vh-180px)] lg:!h-[calc(100vh-180px)] w-full">
+            <main id="main" className="flex items-center justify-center h-[calc(1800px)] min-h-[calc(100vh-184px)] lg:!h-[calc(100vh-180px)] w-full">
                 <Carousel theme={customForm.galeryCustom} slide={false}>
                     {
                         [
@@ -108,7 +108,7 @@ export default function PiscineAchievements() {
                             }
                         ].map((item, index) => (
                             <div key={index} className="h-full flex flex-col lg:flex-row justify-evenly items-center lg:px-[calc(72px)]">
-                                <h2 className="absolute top-0 bg-gray-700 w-full text-center [text-shadow:_2px_2px_rgb(0_0_0_/40%)] p-4">{item.title}</h2>
+                                <h2 className="absolute top-0 bg-gray-700 opacity-75 w-full text-center [text-shadow:_2px_2px_rgb(0_0_0_/40%)] p-4">{item.title}</h2>
                                 {
                                     (item.path.length === 3) ?
                                         item.path.map((img, index) => (

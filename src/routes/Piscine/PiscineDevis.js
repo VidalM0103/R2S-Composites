@@ -78,7 +78,7 @@ export default function ExpertisePiscine() {
     return (
         <>
             <Header menuTitle="R2S Piscine - Devis" />
-            <main className="flex flex-col items-center justify-around min-h-[calc(100vh-180px)] w-full p-4 lg:p-8">
+            <main className="flex flex-col items-center justify-around min-h-[calc(100vh-184px)] w-full p-4 lg:p-8">
                 <form className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-4/5 lg:w-2/3" onSubmit={onSubmit}>
                     {formFields.map(renderFormField)}
                     <div className="mb-3">
