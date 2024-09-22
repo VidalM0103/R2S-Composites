@@ -4,43 +4,43 @@ import React from "react";
 
 const Navbar = () => {
       const navItems = [
-            { type: 'link', title: 'Accueil', path: '/R2S-Composites/' },
+            { type: 'link', title: 'Accueil', path: '/' },
             {
                   type: 'dropdown',
                   title: 'R2S Expertise',
                   items: [
-                        { name: 'Présentation', link: '/R2S-Composites/expertise/' },
-                        { name: 'Demander un devis', link: '/R2S-Composites/expertise/devis' }
+                        { name: 'Présentation', link: '/expertise/' },
+                        { name: 'Demander un devis', link: '/expertise/devis' }
                   ]
             },
             {
                   type: 'dropdown',
                   title: 'R2S Naval',
                   items: [
-                        { name: 'Présentation', link: '/R2S-Composites/naval/' },
-                        { name: 'Réalisations', link: '/R2S-Composites/naval/realisations/' },
-                        { name: 'Demander un devis', link: '/R2S-Composites/naval/devis' }
+                        { name: 'Présentation', link: '/naval/' },
+                        { name: 'Réalisations', link: '/naval/realisations/' },
+                        { name: 'Demander un devis', link: '/naval/devis' }
                   ]
             },
             {
                   type: 'dropdown',
                   title: 'R2S Piscine',
                   items: [
-                        { name: 'Présentation', link: '/R2S-Composites/piscine/' },
-                        { name: 'Projets', link: '/R2S-Composites/piscine/realisations' },
-                        { name: 'Demander un devis', link: '/R2S-Composites/piscine/devis' }
+                        { name: 'Présentation', link: '/piscine/' },
+                        { name: 'Projets', link: '/piscine/realisations' },
+                        { name: 'Demander un devis', link: '/piscine/devis' }
                   ]
             },
             {
                   type: 'dropdown',
                   title: 'R2S Industrie',
                   items: [
-                        { name: 'Présentation', link: '/R2S-Composites/industrie/' },
-                        { name: 'Réalisations', link: '/R2S-Composites/industrie/realisations' },
-                        { name: 'Demander un devis', link: '/R2S-Composites/industrie/devis' }
+                        { name: 'Présentation', link: '/industrie/' },
+                        { name: 'Réalisations', link: '/industrie/realisations' },
+                        { name: 'Demander un devis', link: '/industrie/devis' }
                   ]
             },
-            { type: 'link', title: 'Contact', path: '/R2S-Composites/contact/' }
+            { type: 'link', title: 'Contact', path: '/contact/' }
       ];
       function closeMenu() {
             const menu = document.getElementById('menu-toggle');
@@ -79,8 +79,8 @@ const Navbar = () => {
                               <title>menu</title>
                               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                         </svg>
-                        <Link onClick={closeMenu} to="/R2S-Composites/">
-                              <img src={process.env.PUBLIC_URL + "/R2S-Composites-Fond-Transparent.png"} className="h-24" alt="R2S Logo" />
+                        <Link onClick={closeMenu} to="/">
+                              <img src={process.env.PUBLIC_URL + "-Fond-Transparent.png"} className="h-24" alt="R2S Logo" />
                         </Link>
                         <ul className="hidden lg:!flex lg:!flex-row lg:!static bg-slate-900 lg:!bg-none border-[calc(1px)] border-gray-800 lg:!border-none peer-checked:ml-0 peer-checked:flex peer-checked:flex-col peer-checked:absolute peer-checked:top-[calc(96px)] peer-checked:right-[calc(0px)] lg:p-4">
                               {navItems.map((item, index) => (
