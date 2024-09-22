@@ -80,7 +80,7 @@ const Navbar = () => {
                               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                         </svg>
                         <Link onClick={closeMenu} to="/">
-                              <img src={process.env.PUBLIC_URL + "-Fond-Transparent.png"} className="h-24" alt="R2S Logo" />
+                              <img src={process.env.PUBLIC_URL + "/R2S-Composites-Fond-Transparent.png"} className="h-24" alt="R2S Logo" />
                         </Link>
                         <ul className="hidden lg:!flex lg:!flex-row lg:!static bg-slate-900 lg:!bg-none border-[calc(1px)] border-gray-800 lg:!border-none peer-checked:ml-0 peer-checked:flex peer-checked:flex-col peer-checked:absolute peer-checked:top-[calc(96px)] peer-checked:right-[calc(0px)] lg:p-4">
                               {navItems.map((item, index) => (
