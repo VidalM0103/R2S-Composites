@@ -1,4 +1,6 @@
+import React from 'react';
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from './composants/ScrollToTop';
 import Navbar from './composants/Navbar';
 import Home from './routes/Home';
 import Contact from './routes/Contact';
@@ -13,11 +15,11 @@ import PiscineDevis from './routes/Piscine/PiscineDevis';
 import Industrie from './routes/Industrie/Industrie';
 import IndustrieAchievements from './routes/Industrie/IndustrieAchievements';
 import IndustrieDevis from './routes/Industrie/IndustrieDevis';
-import React from 'react';
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route index path="/" element={<Home />} />
