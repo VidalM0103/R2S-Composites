@@ -65,7 +65,7 @@ const Navbar = () => {
       }
 
       return (
-            <nav className="fixed z-20 w-full top-0 start-0 bg-black border-gray-700 text-lg">
+            <nav className="fixed z-20 w-full top-0 start-0 bg-black text-lg">
                   <div className="flex lg:flex-wrap lg:items-center lg:justify-between">
                         <input className="peer hidden" type="checkbox" id="menu-toggle" />
                         <svg
