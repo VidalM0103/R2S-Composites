@@ -63,7 +63,7 @@ export default function Home() {
         <>
             <header className="flex flex-col items-center justify-between gap-6 min-h-[calc(100vh-96px)] bg-cover bg-center bg-hero brightness-85 font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)] mt-[calc(96px)]">
                 <div className="flex flex-col items-center justify-center my-16">
-                    <h1 className="text-3xl lg:text-7xl text-secondary">R2S COMPOSITES</h1>
+                    <h1 className="text-3xl lg:text-7xl text-secondary">R2S COMPOSITES TEST</h1>
                     <p className="text-xl lg:text-5xl text-center text-primary">Spécialiste dans les matériaux composites</p>
                 </div>
                 <div className="flex items-center justify-center my-16">

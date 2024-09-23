@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from './composants/ScrollToTop';
 import Navbar from './composants/Navbar';
