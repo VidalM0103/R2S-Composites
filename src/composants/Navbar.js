@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import React from "react";
 

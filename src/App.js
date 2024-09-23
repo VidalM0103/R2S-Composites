@@ -16,13 +16,15 @@ import PiscineDevis from './routes/Piscine/PiscineDevis';
 import Industrie from './routes/Industrie/Industrie';
 import IndustrieAchievements from './routes/Industrie/IndustrieAchievements';
 import IndustrieDevis from './routes/Industrie/IndustrieDevis';
+import Error from './routes/Error';
 
-function App() {
+export default function App() {
   return (
     <>
       <ScrollToTop />
       <Navbar />
       <Routes basename={process.env.PUBLIC_URL}>
+        <Route path='*' element={<Error />} />
         <Route index path="/" element={<Home />} />
         <Route path="/expertise/" element={<Expertise />} />
         <Route path="/expertise/devis/" element={<ExpertiseDevis />} />
@@ -40,5 +42,3 @@ function App() {
     </>
   );
 }
-
-export default App;
