@@ -9,17 +9,17 @@ const Navbar = () => {
                   type: 'dropdown',
                   title: 'R2S Expertise',
                   items: [
-                        { name: 'Présentation', link: '/expertise' },
-                        { name: 'Demander un devis', link: '/expertise/devis' }
+                        { name: 'Présentation', link: '/expertise/' },
+                        { name: 'Demander un devis', link: '/expertise/devis/' }
                   ]
             },
             {
                   type: 'dropdown',
                   title: 'R2S Naval',
                   items: [
-                        { name: 'Présentation', link: '/naval' },
-                        { name: 'Réalisations', link: '/naval/realisations' },
-                        { name: 'Demander un devis', link: '/naval/devis' }
+                        { name: 'Présentation', link: '/naval/' },
+                        { name: 'Réalisations', link: '/naval/realisations/' },
+                        { name: 'Demander un devis', link: '/naval/devis/' }
                   ]
             },
             {
@@ -27,20 +27,20 @@ const Navbar = () => {
                   title: 'R2S Piscine',
                   items: [
                         { name: 'Présentation', link: '/piscine/' },
-                        { name: 'Projets', link: '/piscine/realisations' },
-                        { name: 'Demander un devis', link: '/piscine/devis' }
+                        { name: 'Projets', link: '/piscine/realisations/' },
+                        { name: 'Demander un devis', link: '/piscine/devis/' }
                   ]
             },
             {
                   type: 'dropdown',
                   title: 'R2S Industrie',
                   items: [
-                        { name: 'Présentation', link: '/industrie' },
-                        { name: 'Réalisations', link: '/industrie/realisations' },
-                        { name: 'Demander un devis', link: '/industrie/devis' }
+                        { name: 'Présentation', link: '/industrie/' },
+                        { name: 'Réalisations', link: '/industrie/realisations/' },
+                        { name: 'Demander un devis', link: '/industrie/devis/' }
                   ]
             },
-            { type: 'link', title: 'Contact', path: '/contact' }
+            { type: 'link', title: 'Contact', path: '/contact/' }
       ];
       function closeMenu() {
             const menu = document.getElementById('menu-toggle');

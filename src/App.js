@@ -24,18 +24,18 @@ function App() {
       <Navbar />
       <Routes basename={process.env.PUBLIC_URL}>
         <Route index path="/" element={<Home />} />
-        <Route path="/expertise" element={<Expertise />} />
-        <Route path="/expertise/devis" element={<ExpertiseDevis />} />
-        <Route path="/naval" element={<Naval />} />
-        <Route path="/naval/realisations" element={<NavalAchievements />} />
-        <Route path="/naval/devis" element={<NavalDevis />} />
+        <Route path="/expertise/" element={<Expertise />} />
+        <Route path="/expertise/devis/" element={<ExpertiseDevis />} />
+        <Route path="/naval/" element={<Naval />} />
+        <Route path="/naval/realisations/" element={<NavalAchievements />} />
+        <Route path="/naval/devis/" element={<NavalDevis />} />
         <Route path="/piscine/" element={<Piscine />} />
-        <Route path="/piscine/realisations" element={<PiscineAchievements />} />
-        <Route path="/piscine/devis" element={<PiscineDevis />} />
-        <Route path="/industrie" element={<Industrie />} />
-        <Route path="/industrie/realisations" element={<IndustrieAchievements />} />
-        <Route path="/industrie/devis" element={<IndustrieDevis />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/piscine/realisations/" element={<PiscineAchievements />} />
+        <Route path="/piscine/devis/" element={<PiscineDevis />} />
+        <Route path="/industrie/" element={<Industrie />} />
+        <Route path="/industrie/realisations/" element={<IndustrieAchievements />} />
+        <Route path="/industrie/devis/" element={<IndustrieDevis />} />
+        <Route path="/contact/" element={<Contact />} />
       </Routes>
     </>
   );
