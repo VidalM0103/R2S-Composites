@@ -42,7 +42,7 @@ const Dropdown = ({ ulId, menuTitle, subMenus }) => {
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                 </svg>
             </ul>
-            <ul id={ulId} className="animate-fadeInUp ulMenu lg:!absolute hidden lg:!hidden lg:group-hover:!block bg-gray-700 w-56 border-t-2 border-primary">
+            <ul id={ulId} className="lg:animate-fadeInUp ulMenu lg:!absolute hidden lg:!hidden lg:group-hover:!block bg-gray-700 w-56 border-t-2 border-primary">
                 {
                     subMenus.map((subMenu, index) => (
                         <>
