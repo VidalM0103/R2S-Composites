@@ -26,7 +26,7 @@ const Navbar = () => {
                   type: 'dropdown',
                   title: 'R2S Piscine',
                   items: [
-                        { name: 'Présentation', link: '/piscine' },
+                        { name: 'Présentation', link: '/piscine/' },
                         { name: 'Projets', link: '/piscine/realisations' },
                         { name: 'Demander un devis', link: '/piscine/devis' }
                   ]

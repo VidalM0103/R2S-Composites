@@ -29,7 +29,7 @@ function App() {
         <Route path="/naval" element={<Naval />} />
         <Route path="/naval/realisations" element={<NavalAchievements />} />
         <Route path="/naval/devis" element={<NavalDevis />} />
-        <Route path="/piscine" element={<Piscine />} />
+        <Route path="/piscine/" element={<Piscine />} />
         <Route path="/piscine/realisations" element={<PiscineAchievements />} />
         <Route path="/piscine/devis" element={<PiscineDevis />} />
         <Route path="/industrie" element={<Industrie />} />
