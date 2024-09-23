@@ -76,35 +76,35 @@ export default function PiscineAchievements() {
                         [
                             {
                                 title: "Mise en place du chantier, montage de l’abris de protection",
-                                path: ["projet-1-1.png", "projet-1-2.png", "projet-1-3.png"]
+                                path: ["/piscine/projet-1-1.png", "/piscine/projet-1-2.png", "/piscine/projet-1-3.png"]
                             },
                             {
                                 title: "Avant réfection",
-                                path: ["projet-2-1.png", "projet-2-2.png"]
+                                path: ["/piscine/projet-2-1.png", "/piscine/projet-2-2.png"]
                             },
                             {
                                 title: "Après réfection",
-                                path: ["projet-3-1.png", "projet-3-2.png", "projet-3-3.png"]
+                                path: ["/piscine/projet-3-1.png", "/piscine/projet-3-2.png", "/piscine/projet-3-3.png"]
                             },
                             {
                                 title: "Après réfection",
-                                path: ["projet-4-1.png", "projet-4-2.png", "projet-4-3.png"]
+                                path: ["/piscine/projet-4-1.png", "/piscine/projet-4-2.png", "/piscine/projet-4-3.png"]
                             },
                             {
                                 title: "Après réfection",
-                                path: ["projet-5-1.png", "projet-5-2.png", "projet-5-3.png"]
+                                path: ["/piscine/projet-5-1.png", "/piscine/projet-5-2.png", "/piscine/projet-5-3.png"]
                             },
                             {
                                 title: "Après réfection",
-                                path: ["projet-6-1.png", "projet-6-2.png", "projet-6-3.png"]
+                                path: ["/piscine/projet-6-1.png", "/piscine/projet-6-2.png", "/piscine/projet-6-3.png"]
                             },
                             {
                                 title: "Après réfection",
-                                path: ["projet-7-1.png", "projet-7-2.png", "projet-7-3.png"]
+                                path: ["/piscine/projet-7-1.png", "/piscine/projet-7-2.png", "/piscine/projet-7-3.png"]
                             },
                             {
                                 title: "Après réfection",
-                                path: ["projet-8-1.png", "projet-8-2.png", "projet-8-3.png"]
+                                path: ["/piscine/projet-8-1.png", "/piscine/projet-8-2.png", "/piscine/projet-8-3.png"]
                             }
                         ].map((item, index) => (
                             <div key={index} className="h-full flex flex-col lg:flex-row justify-evenly items-center lg:px-[calc(72px)]">

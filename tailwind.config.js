@@ -16,12 +16,10 @@ module.exports = {
       keyframes: theme => ({
         fadeInDown: {
           "0%": {
-            transform: "translateY(30px)",
-            opacity: 0,
+            opacity: 0
           },
           "100%": {
-            transform: "translateY(0px)",
-            opacity: 1,
+            opacity: 1
           },
         },
 

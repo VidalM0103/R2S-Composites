@@ -41,7 +41,7 @@ export default function Piscine() {
                     </Paragraph>
                 </section>
                 <section className="flex justify-center items-center m-4 lg:m-8">
-                    <img className="rounded-lg shadow-lg" src="projet-3-3.png" alt="" />
+                    <img className="rounded-lg shadow-lg" src="/piscine/projet-3-3.png" alt="" />
                 </section>
             </main>
         </>

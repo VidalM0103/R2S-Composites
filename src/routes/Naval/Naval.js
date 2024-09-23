@@ -6,17 +6,17 @@ export default function Naval() {
         {
             id: 1,
             title: "Polissage de votre coque : Nous effectuons un polissage de votre coque afin de redonner le brillant d'origine a votre Gel-Coat",
-            images: ["presentation/prestation-naval-2-1.jpeg", "presentation/prestation-naval-2-2.jpeg"]
+            images: ["/naval/presentation/prestation-naval-2-1.jpeg", "/naval/presentation/prestation-naval-2-2.jpeg"]
         },
         {
             id: 2,
             title: "Réparation ou modification de votre bateau (délaminage, fissure, déformation, talonnage, frottement)",
-            images: ["presentation/prestation-naval-1-1.jpeg", "presentation/prestation-naval-1-2.jpeg"]
+            images: ["/naval/presentation/prestation-naval-1-1.jpeg", "/naval/presentation/prestation-naval-1-2.jpeg"]
         },
         {
             id: 3,
             title: "Carénage antifouling : matrice dure / semi–érodable / érodable",
-            images: ["presentation/prestation-naval-3-1.jpeg", "presentation/prestation-naval-3-2.jpeg"]
+            images: ["/naval/presentation/prestation-naval-3-1.jpeg", "/naval/presentation/prestation-naval-3-2.jpeg"]
         }
     ];
     const NavalServiceItem = ({ title, imageSrc }) => (

@@ -43,8 +43,8 @@ export default function Expertise() {
                     }
                 </section>
                 <section className="flex flex-col gap-4 items-center justify-evenly col-span-1">
-                    <img src="expertise-bateau-sonde.jpeg" alt="" className="rounded-lg shadow-lg h-auto w-auto max-h-[calc(350px)]" />
-                    <img src="expertise-bateau-reunion.jpeg" alt="" className="rounded-lg shadow-lg h-auto w-auto max-h-[calc(300px)]" />
+                    <img src="/expertise/expertise-bateau-sonde.jpeg" alt="" className="rounded-lg shadow-lg h-auto w-auto max-h-[calc(350px)]" />
+                    <img src="/expertise/expertise-bateau-reunion.jpeg" alt="" className="rounded-lg shadow-lg h-auto w-auto max-h-[calc(300px)]" />
                 </section>
             </main>
         </>

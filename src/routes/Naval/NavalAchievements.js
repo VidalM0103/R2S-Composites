@@ -73,18 +73,18 @@ export default function NavalAchievements() {
                 <Carousel theme={customForm.galeryCustom} slide={false}>
                     {
                         [
-                            ["chantier-1-1.png", "chantier-1-2.png", "chantier-1-3.png"],
-                            ["chantier-2-1.png", "chantier-2-2.png"],
-                            ["chantier-3-1.png", "chantier-3-2.png"],
-                            ["chantier-4-1.png", "chantier-4-2.png"],
-                            ["chantier-5-1.png", "chantier-5-2.png", "chantier-5-3.png"],
-                            ["chantier-6-1.png", "chantier-6-2.png", "chantier-6-3.png"],
-                            ["chantier-7-1.png", "chantier-7-2.png", "chantier-7-4.png"],
-                            ["chantier-8-1.png", "chantier-8-2.png", "chantier-8-3.png"],
-                            ["chantier-9-1.png", "chantier-9-2.png", "chantier-9-3.png"],
-                            ["chantier-10-1.png", "chantier-10-2.png"],
-                            ["chantier-11-1.png", "chantier-11-2.png", "chantier-11-4.png"],
-                            ["chantier-12-1.png", "chantier-12-2.png"]
+                            ["/naval/realisations/chantier-1-1.png", "/naval/realisations/chantier-1-2.png", "/naval/realisations/chantier-1-3.png"],
+                            ["/naval/realisations/chantier-2-1.png", "/naval/realisations/chantier-2-2.png"],
+                            ["/naval/realisations/chantier-3-1.png", "/naval/realisations/chantier-3-2.png"],
+                            ["/naval/realisations/chantier-4-1.png", "/naval/realisations/chantier-4-2.png"],
+                            ["/naval/realisations/chantier-5-1.png", "/naval/realisations/chantier-5-2.png", "/naval/realisations/chantier-5-3.png"],
+                            ["/naval/realisations/chantier-6-1.png", "/naval/realisations/chantier-6-2.png", "/naval/realisations/chantier-6-3.png"],
+                            ["/naval/realisations/chantier-7-1.png", "/naval/realisations/chantier-7-2.png", "/naval/realisations/chantier-7-4.png"],
+                            ["/naval/realisations/chantier-8-1.png", "/naval/realisations/chantier-8-2.png", "/naval/realisations/chantier-8-3.png"],
+                            ["/naval/realisations/chantier-9-1.png", "/naval/realisations/chantier-9-2.png", "/naval/realisations/chantier-9-3.png"],
+                            ["/naval/realisations/chantier-10-1.png", "/naval/realisations/chantier-10-2.png"],
+                            ["/naval/realisations/chantier-11-1.png", "/naval/realisations/chantier-11-2.png", "/naval/realisations/chantier-11-4.png"],
+                            ["/naval/realisations/chantier-12-1.png", "/naval/realisations/chantier-12-2.png"]
                         ].map((item, index) => (
                             <div key={index} className="h-full flex flex-col lg:flex-row justify-evenly items-center lg:px-[calc(72px)]">
                                 {
