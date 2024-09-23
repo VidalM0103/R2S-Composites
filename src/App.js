@@ -22,7 +22,7 @@ function App() {
     <>
       <ScrollToTop />
       <Navbar />
-      <Routes>
+      <Routes basename={process.env.PUBLIC_URL}>
         <Route index path="/" element={<Home />} />
         <Route path="/expertise" element={<Expertise />} />
         <Route path="/expertise/devis" element={<ExpertiseDevis />} />
