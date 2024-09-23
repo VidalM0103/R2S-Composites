@@ -73,9 +73,9 @@ export default function IndustrieAchievements() {
                 <Carousel theme={customForm.galeryCustom} slide={false}>
                     {
                         [
-                            ["chantier-1-1.png", "chantier-1-2.png"],
-                            ["chantier-2-1.png", "chantier-2-2.png"],
-                            ["chantier-3-1.png", "chantier-3-2.png"]
+                            ["/industrie/chantier-1-1.png", "/industrie/chantier-1-2.png"],
+                            ["/industrie/chantier-2-1.png", "/industrie/chantier-2-2.png"],
+                            ["/industrie/chantier-3-1.png", "/industrie/chantier-3-2.png"]
                         ].map((item, index) => (
                             <div key={index} className="flex flex-col lg:flex-row justify-evenly items-center h-full lg:px-[calc(72px)]">
                                 {
