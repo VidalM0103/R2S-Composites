@@ -18,7 +18,7 @@ export default function Industrie() {
                     <p className="text-lg mb-3 lg:mb-6">
                         L’entreprise R2S Composites basée à La Seyne sur Mer (83) est spécialisée dans les réparations composites ainsi que divers projets grâce à une équipe de professionnels à votre service. Nos professionnels vous garantissent des prestations sur-mesure, adaptées à vos besoins.
                     </p>
-                    <ul className="list-disc marker:text-yellow-300 ml-16 lg:ml-32">
+                    <ul className="list-disc marker:text-primary ml-16 lg:ml-32">
                         {services.map((service, index) => (
                             <li key={index} className="mb-2 lg:mb-4">
                                 {service}

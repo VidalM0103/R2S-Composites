@@ -63,12 +63,12 @@ export default function Home() {
         <>
             <header className="flex flex-col items-center justify-between gap-6 min-h-[calc(100vh-96px)] bg-cover bg-center bg-hero brightness-85 font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)] mt-[calc(96px)]">
                 <div className="flex flex-col items-center justify-center my-16">
-                    <h1 className="text-3xl lg:text-7xl">R2S COMPOSITES</h1>
-                    <p className="text-xl lg:text-5xl text-center text-yellow-300">Spécialiste dans les matériaux composites</p>
+                    <h1 className="text-3xl lg:text-7xl text-secondary">R2S COMPOSITES</h1>
+                    <p className="text-xl lg:text-5xl text-center text-primary">Spécialiste dans les matériaux composites</p>
                 </div>
                 <div className="flex items-center justify-center my-16">
-                    <h2 className="text-center">Découvrir nos différents services &nbsp;</h2>
-                    <svg className="animate-bounce" width="40px" height="40px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M831.872 340.864 512 652.672 192.128 340.864a30.592 30.592 0 0 0-42.752 0 29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728 30.592 30.592 0 0 0-42.752 0z" /></svg>
+                    <h2 className="text-center text-primary">Découvrir nos différents services &nbsp;</h2>
+                    <svg className="animate-bounce" width="40px" height="40px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#DAA520" d="M831.872 340.864 512 652.672 192.128 340.864a30.592 30.592 0 0 0-42.752 0 29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728 30.592 30.592 0 0 0-42.752 0z" /></svg>
                 </div>
             </header>
             <main className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6 m-2 lg:m-6">

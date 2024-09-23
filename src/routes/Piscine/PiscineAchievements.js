@@ -70,7 +70,7 @@ export default function PiscineAchievements() {
     return (
         <>
             <Header menuTitle="R2S Piscine - Projets" />
-            <main id="main" className="flex items-center justify-center h-[calc(1800px)] min-h-[calc(100vh-184px)] lg:!h-[calc(100vh-180px)] w-full">
+            <main id="main" className="flex items-center justify-center h-[calc(1800px)] min-h-[calc(100vh-184px)] lg:!h-[calc(100vh-184px)] w-full">
                 <Carousel theme={customForm.galeryCustom} slide={false}>
                     {
                         [

@@ -69,7 +69,7 @@ export default function IndustrieAchievements() {
     return (
         <>
             <Header menuTitle="R2S Industrie - Réalisations" />
-            <main id="main" className="flex items-center justify-center h-[calc(1200px)] min-h-[calc(100vh-184px)] lg:!h-[calc(100vh-180px)] w-full">
+            <main id="main" className="flex items-center justify-center h-[calc(1200px)] min-h-[calc(100vh-185px)] lg:!h-[calc(100vh-184px)] w-full">
                 <Carousel theme={customForm.galeryCustom} slide={false}>
                     {
                         [

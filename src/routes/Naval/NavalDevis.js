@@ -83,7 +83,7 @@ export default function NavalDevis() {
                             <input
                                 type="number"
                                 id="input-lenghtShip"
-                                className="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-yellow-300 focus:border-yellow-300"
+                                className="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-primary focus:border-primary"
                                 value={valueMeterShip[1]}
                                 onChange={handleChange}
                                 min="4"
@@ -113,7 +113,7 @@ export default function NavalDevis() {
                         </div>
                         <Textarea theme={customForm.textAreaInputCustom} color="primary" id="message" className='min-h-28' name="Message" />
                     </div>
-                    <div className="flex flex-col items-center lg:col-span-2 text-center mb-4">
+                    <div className="flex flex-col items-center lg:col-span-2 text-center p-4">
                         <button type="submit" className="w-60 btn-primary">Demander un devis</button>
                         {result && <span className="text-white mt-2">{result}</span>}
                     </div>

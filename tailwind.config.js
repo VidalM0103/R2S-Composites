@@ -10,6 +10,22 @@ module.exports = {
 
   theme: {
     extend: {
+      animation: {
+        fadeInUp: 'fadeInDown 0.5s'
+      },
+      keyframes: theme => ({
+        fadeInDown: {
+          "0%": {
+            transform: "translateY(30px)",
+            opacity: 0,
+          },
+          "100%": {
+            transform: "translateY(0px)",
+            opacity: 1,
+          },
+        },
+
+      }),
       textShadow: {
         md: '0 2px 4px var(--tw-shadow-color)',
       },
@@ -20,8 +36,9 @@ module.exports = {
         'hero': "url('/public/landingPage/harbor.jpg')"
       },
       colors: {
-        primary: "#FACA15",
-        primaryDark: "#c29d10",
+        primary: "#DAA520",
+        primaryLigth: "#FFD700",
+        secondary: "#C0C0C0"
       }
     }
   },

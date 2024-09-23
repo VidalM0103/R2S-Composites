@@ -26,8 +26,8 @@ export default function Expertise() {
 
     const ExpertiseSection = ({ title, content }) => (
         <section>
-            <h2 className="text-yellow-300 mb-2">{title}</h2>
-            <p className="indent-8 mb-4">{content}</p>
+            <h2 className="text-primary mb-2">{title}</h2>
+            <p className="mb-4">{content}</p>
         </section>
     );
 

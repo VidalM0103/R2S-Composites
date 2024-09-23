@@ -69,12 +69,11 @@ export default function IndustrieDevis() {
             <main className="flex flex-col justify-around items-center min-h-[calc(100vh-184px)] w-full p-4 lg:p-8" id="contact">
                 <form className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-4/5 lg:w-2/3" id="contactForm" onSubmit={onSubmit}>
                     {listItems}
-                    <div className="flex flex-col items-center lg:col-span-2 text-center mb-4">
+                    <div className="flex flex-col items-center lg:col-span-2 text-center p-4">
                         <button type="submit" className="w-60 btn-primary">Demander un devis</button>
                         <span className='text-white mt-2'>{result}</span>
                     </div>
                 </form>
-
             </main >
         </>
     );

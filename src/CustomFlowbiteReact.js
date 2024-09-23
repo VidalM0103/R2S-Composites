@@ -7,7 +7,7 @@ const CustomFlowbiteReact = {
                         "md": "p-2.5 text-base",
                     },
                     "colors": {
-                        "primary": "bg-white ring-1 focus:ring-yellow-300  focus:border-yellow-300 text-gray-800",
+                        "primary": "bg-white ring-1 focus:ring-primary  focus:border-primary text-gray-800",
                     }
                 }
             }
@@ -15,7 +15,7 @@ const CustomFlowbiteReact = {
         textAreaInputCustom: {
             "base": "block w-full rounded-lg border text-base disabled:cursor-not-allowed disabled:opacity-50",
             "colors": {
-                "primary": "bg-white ring-1 focus:ring-yellow-300  focus:border-yellow-300 text-gray-800",
+                "primary": "bg-white ring-1 focus:ring-primary  focus:border-primary text-gray-800",
             }
         },
         labelCustom: {

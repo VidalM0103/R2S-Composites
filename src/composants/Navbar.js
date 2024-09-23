@@ -65,7 +65,7 @@ const Navbar = () => {
       }
 
       return (
-            <nav className="fixed z-20 w-full top-0 start-0 bg-gray-900 border-gray-700 text-lg">
+            <nav className="fixed z-20 w-full top-0 start-0 bg-black border-gray-700 text-lg">
                   <div className="flex lg:flex-wrap lg:items-center lg:justify-between">
                         <input className="peer hidden" type="checkbox" id="menu-toggle" />
                         <svg
@@ -82,17 +82,17 @@ const Navbar = () => {
                         <Link onClick={closeMenu} to="/">
                               <img src={process.env.PUBLIC_URL + "/R2S-Composites-Fond-Transparent.png"} className="h-24" alt="R2S Logo" />
                         </Link>
-                        <ul className="hidden lg:!flex lg:!flex-row lg:!static bg-slate-900 lg:!bg-none border-[calc(1px)] border-gray-800 lg:!border-none peer-checked:ml-0 peer-checked:flex peer-checked:flex-col peer-checked:absolute peer-checked:top-[calc(96px)] peer-checked:right-[calc(0px)] lg:p-4">
+                        <ul className="hidden lg:!flex lg:!flex-row lg:!static bg-black lg:!bg-none border-[calc(1px)] border-gray-900 lg:!border-none peer-checked:ml-0 peer-checked:flex peer-checked:flex-col peer-checked:absolute peer-checked:top-[calc(96px)] peer-checked:right-[calc(0px)] lg:p-4">
                               {navItems.map((item, index) => (
                                     <React.Fragment key={item.title}>
                                           {item.type === 'link' ? (
                                                 <li>
-                                                      <Link onClick={closeMenu} to={item.path} className="block p-4 hover:text-yellow-300">
+                                                      <Link onClick={closeMenu} to={item.path} className="block p-4 hover:text-primary">
                                                             {item.title}
                                                       </Link>
                                                 </li>
                                           ) : (
-                                                <li className="group inline-block relative">
+                                                <li className="group relative inline-block cursor-pointer">
                                                       <Dropdown ulId={index + 1} menuTitle={item.title} subMenus={item.items} />
                                                 </li>
                                           )}
