@@ -1,3 +1,7 @@
-# https://www.robotstxt.org/robotstxt.html
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
 User-agent: *
-Disallow:
+Allow: /
+
+Sitemap: https://r2-s-composites.vercel.app/public/sitemap.xml
