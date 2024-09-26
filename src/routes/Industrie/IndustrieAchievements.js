@@ -3,6 +3,8 @@ import { useEffect, useState } from "react"
 import CustomFlowbiteReact from "../../CustomFlowbiteReact.js"
 import Header from "../../composants/Header.js"
 import { Helmet } from "react-helmet"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export default function IndustrieAchievements() {
     const [width, setWidth] = useState(window.innerWidth);
@@ -91,7 +93,7 @@ export default function IndustrieAchievements() {
                             <div key={index} className="flex flex-col lg:flex-row justify-evenly items-center h-full lg:px-[calc(72px)]">
                                 {
                                     item.map((img, indexImg) => (
-                                        <img key={indexImg} className="lg:max-w-[calc(33%)]" src={img} alt="" />
+                                        <LazyLoadImage key={indexImg} width="lg:max-w-[calc(33%)]" src={img} alt="" effect="blur" />
                                     ))
                                 }
                             </div>

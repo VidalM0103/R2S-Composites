@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import CustomFlowbiteReact from "../../CustomFlowbiteReact.js";
 import Header from '../../composants/Header.js';
 import { Helmet } from "react-helmet";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export default function NavalAchievements() {
     const [width, setWidth] = useState(window.innerWidth);
@@ -101,10 +103,10 @@ export default function NavalAchievements() {
                                 {
                                     (item.length === 3) ?
                                         item.map((img, indexImg) => (
-                                            <img key={indexImg} className="lg:max-w-[calc(33%)]" src={img} alt="" />
+                                            <LazyLoadImage key={indexImg} width="lg:max-w-[calc(33%)]" src={img} alt="" effect="blur" />
                                         )) :
                                         item.map((img, indexImg) => (
-                                            <img key={indexImg} className="lg:max-w-[calc(50%)]" src={img} alt="" />
+                                            <LazyLoadImage key={indexImg} width="lg:max-w-[calc(50%)]" src={img} alt="" effect="blur" />
                                         ))
                                 }
                             </div>

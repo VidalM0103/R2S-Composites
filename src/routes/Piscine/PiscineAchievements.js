@@ -3,6 +3,8 @@ import { useState, useEffect } from "react"
 import CustomFlowbiteReact from "../../CustomFlowbiteReact.js"
 import Header from '../../composants/Header.js'
 import { Helmet } from "react-helmet"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export default function PiscineAchievements() {
     const [width, setWidth] = useState(window.innerWidth);
@@ -123,10 +125,10 @@ export default function PiscineAchievements() {
                                 {
                                     (item.path.length === 3) ?
                                         item.path.map((img, index) => (
-                                            <img key={index} className="lg:max-w-[calc(33%)]" src={img} alt="" />
+                                            <LazyLoadImage key={index} width="lg:max-w-[calc(33%)]" src={img} alt="" effect="blur" />
                                         )) :
                                         item.path.map((img, index) => (
-                                            <img key={index} className="lg:max-w-[calc(50%)]" src={img} alt="" />
+                                            <LazyLoadImage key={index} width="lg:max-w-[calc(50%)]" src={img} alt="" effect="blur" />
                                         ))
                                 }
                             </div>

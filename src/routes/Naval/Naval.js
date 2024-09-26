@@ -2,6 +2,8 @@ import { Carousel } from "flowbite-react"
 import Header from "../../composants/Header"
 import CustomFlowbiteReact from "../../CustomFlowbiteReact"
 import { Helmet } from "react-helmet";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export default function Naval() {
     const navalServices = [
@@ -27,8 +29,7 @@ export default function Naval() {
                 {title}
             </h3>
             <div className="flex flex-col h-full items-center justify-center">
-
-                <img src={imageSrc} alt={title} />
+                <LazyLoadImage src={imageSrc} alt={title} effect="blur" />
             </div>
         </>
     );
