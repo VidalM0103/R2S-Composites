@@ -2,6 +2,7 @@ import { Carousel } from "flowbite-react";
 import { useState, useEffect } from "react";
 import CustomFlowbiteReact from "../../CustomFlowbiteReact.js";
 import Header from '../../composants/Header.js';
+import { Helmet } from "react-helmet";
 
 export default function NavalAchievements() {
     const [width, setWidth] = useState(window.innerWidth);
@@ -67,6 +68,17 @@ export default function NavalAchievements() {
 
     return (
         <>
+            <Helmet>
+                <title>R2S Naval - Réalisations</title>
+                <meta
+                    name="description"
+                    content="R2S Naval description here"
+                />
+                <meta
+                    name="keywords"
+                    content="Naval, OtherKeyWord"
+                />
+            </Helmet>
             <Header menuTitle="R2S Naval - Réalisations" />
             <main id="main" className="flex items-center justify-center h-[calc(1800px)] min-h-[calc(100vh-184px)] lg:!h-[calc(100vh-184px)] w-full">
                 <Carousel theme={CustomFlowbiteReact.galeryCustom} slide={false}>

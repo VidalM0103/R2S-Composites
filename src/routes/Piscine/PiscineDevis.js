@@ -1,15 +1,16 @@
-import { useState } from 'react';
-import RangeSlider from 'react-range-slider-input';
-import 'react-range-slider-input/dist/style.css';
+import { useState } from 'react'
+import RangeSlider from 'react-range-slider-input'
+import 'react-range-slider-input/dist/style.css'
 import {
     Label,
     Textarea,
     TextInput,
     Select,
     Checkbox
-} from "flowbite-react";
-import CustomFlowbiteReact from "../../CustomFlowbiteReact.js";
-import Header from "../../composants/Header";
+} from "flowbite-react"
+import CustomFlowbiteReact from "../../CustomFlowbiteReact.js"
+import Header from "../../composants/Header"
+import { Helmet } from "react-helmet"
 
 
 export default function ExpertisePiscine() {
@@ -77,6 +78,17 @@ export default function ExpertisePiscine() {
 
     return (
         <>
+            <Helmet>
+                <title>R2S Piscine - Devis</title>
+                <meta
+                    name="description"
+                    content="R2S Piscine description here"
+                />
+                <meta
+                    name="keywords"
+                    content="Piscine, OtherKeyWord"
+                />
+            </Helmet>
             <Header menuTitle="R2S Piscine - Devis" />
             <main className="flex flex-col items-center justify-around min-h-[calc(100vh-184px)] w-full p-4 lg:p-8">
                 <form className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-4/5 lg:w-2/3" onSubmit={onSubmit}>

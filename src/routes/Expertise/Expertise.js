@@ -1,4 +1,6 @@
 import Header from "../../composants/Header";
+import { Helmet } from "react-helmet";
+
 
 export default function Expertise() {
     const expertiseTypes = [
@@ -33,6 +35,17 @@ export default function Expertise() {
 
     return (
         <>
+            <Helmet>
+                <title>R2S Expertise</title>
+                <meta
+                    name="description"
+                    content="R2S Expertise description here"
+                />
+                <meta
+                    name="keywords"
+                    content="Expertise, KeyWord, OtherKeyWord"
+                />
+            </Helmet>
             <Header menuTitle="R2S Expertise - Présentation" />
             <main className="lg:grid lg:grid-cols-3 min-h-[calc(100vh-185px)] gap-4 p-4 lg:p-8">
                 <section className="flex flex-col justify-evenly items-start col-span-2">

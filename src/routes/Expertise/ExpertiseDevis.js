@@ -8,6 +8,7 @@ import {
 } from "flowbite-react";
 import CustomFlowbiteReact from "../../CustomFlowbiteReact.js";
 import Header from "../../composants/Header";
+import { Helmet } from "react-helmet";
 
 
 export default function ExpertiseDevis() {
@@ -72,6 +73,17 @@ export default function ExpertiseDevis() {
 
     return (
         <>
+            <Helmet>
+                <title>R2S Expertise - Devis</title>
+                <meta
+                    name="description"
+                    content="R2S Expertise description here"
+                />
+                <meta
+                    name="keywords"
+                    content="Expertise, devis, OtherKeyWord"
+                />
+            </Helmet>
             <Header menuTitle="R2S Expertise - Devis" />
             <main className="flex flex-col justify-around items-center min-h-[calc(100vh-184px)] p-4 lg:p-8">
                 <form className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-4/5 lg:w-2/3" onSubmit={onSubmit}>

@@ -1,7 +1,8 @@
 import { Carousel } from "flowbite-react"
 import { useState, useEffect } from "react"
 import CustomFlowbiteReact from "../../CustomFlowbiteReact.js"
-import Header from '../../composants/Header.js';
+import Header from '../../composants/Header.js'
+import { Helmet } from "react-helmet"
 
 export default function PiscineAchievements() {
     const [width, setWidth] = useState(window.innerWidth);
@@ -68,6 +69,17 @@ export default function PiscineAchievements() {
 
     return (
         <>
+            <Helmet>
+                <title>R2S Piscine - Projets</title>
+                <meta
+                    name="description"
+                    content="R2S Piscine description here"
+                />
+                <meta
+                    name="keywords"
+                    content="Piscine, OtherKeyWord"
+                />
+            </Helmet>
             <Header menuTitle="R2S Piscine - Projets" />
             <main id="main" className="flex items-center justify-center h-[calc(1800px)] min-h-[calc(100vh-184px)] lg:!h-[calc(100vh-184px)] w-full">
                 <Carousel theme={CustomFlowbiteReact.galeryCustom} slide={false}>

@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+import { Helmet } from "react-helmet"
 
 export default function Home() {
     const services = [
@@ -61,6 +62,17 @@ export default function Home() {
 
     return (
         <>
+            <Helmet>
+                <title>R2S Homepage</title>
+                <meta
+                    name="description"
+                    content="R2S Homepage description here"
+                />
+                <meta
+                    name="keywords"
+                    content="R2S, OtherKeyWord"
+                />
+            </Helmet>
             <header className="flex flex-col items-center justify-between gap-6 min-h-[calc(100vh-96px)] bg-cover bg-center bg-hero brightness-85 font-bold [text-shadow:_3px_3px_rgb(0_0_0_/40%)] mt-[calc(96px)]">
                 <div className="flex flex-col items-center justify-center my-16">
                     <h1 className="text-3xl lg:text-7xl text-secondary">R2S COMPOSITES</h1>

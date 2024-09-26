@@ -1,4 +1,5 @@
 import Header from "../../composants/Header";
+import { Helmet } from "react-helmet"
 
 export default function Industrie() {
     const services = [
@@ -12,6 +13,17 @@ export default function Industrie() {
 
     return (
         <>
+            <Helmet>
+                <title>R2S Industrie</title>
+                <meta
+                    name="description"
+                    content="R2S Industrie description here"
+                />
+                <meta
+                    name="keywords"
+                    content="Industrie, devis, OtherKeyWord"
+                />
+            </Helmet>
             <Header menuTitle="R2S Industrie - Présentation" />
             <main className="flex flex-col lg:flex-row items-center justify-center min-h-[calc(100vh-185px)] p-4 lg:p-8 ">
                 <section>

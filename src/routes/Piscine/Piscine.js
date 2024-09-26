@@ -1,4 +1,5 @@
-import Header from "../../composants/Header";
+import Header from "../../composants/Header"
+import { Helmet } from "react-helmet"
 
 export default function Piscine() {
     const Paragraph = ({ title, children }) => (
@@ -9,6 +10,17 @@ export default function Piscine() {
     );
     return (
         <>
+            <Helmet>
+                <title>R2S Piscine</title>
+                <meta
+                    name="description"
+                    content="R2S Piscine description here"
+                />
+                <meta
+                    name="keywords"
+                    content="Piscine, OtherKeyWord"
+                />
+            </Helmet>
             <Header menuTitle="R2S Piscine - Présentation" />
             <main className="flex flex-col lg:flex-row justify-center items-center min-h-[calc(100vh-185px)] p-4 lg:p-8 ">
                 <section className="flex flex-col justify-center flex-1">

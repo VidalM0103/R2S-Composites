@@ -1,6 +1,7 @@
 import { Carousel } from "flowbite-react"
 import Header from "../../composants/Header"
 import CustomFlowbiteReact from "../../CustomFlowbiteReact"
+import { Helmet } from "react-helmet";
 
 export default function Naval() {
     const navalServices = [
@@ -33,6 +34,17 @@ export default function Naval() {
     );
     return (
         <>
+            <Helmet>
+                <title>R2S Naval</title>
+                <meta
+                    name="description"
+                    content="R2S Naval description here"
+                />
+                <meta
+                    name="keywords"
+                    content="Industrie, OtherKeyWord"
+                />
+            </Helmet>
             <Header menuTitle="R2S Naval - Présentation" />
             <main className="flex flex-col lg:flex-row justify-center items-center min-h-[calc(100vh-185px)]">
                 <section className="flex flex-col items-center justify-center flex-1 p-4 lg:p-8">
