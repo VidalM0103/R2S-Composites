@@ -1,5 +1,6 @@
 import { Carousel } from "flowbite-react"
 import Header from "../../composants/Header"
+import CustomFlowbiteReact from "../../CustomFlowbiteReact"
 
 export default function Naval() {
     const navalServices = [
@@ -20,14 +21,15 @@ export default function Naval() {
         }
     ];
     const NavalServiceItem = ({ title, imageSrc }) => (
-        <div className="flex h-full items-center justify-center bg-gray-400">
-            <div className="absolute flex items-center justify-center w-full min-h-[75px] bg-gray-700 bg-opacity-75 top-0">
-                <h3 className="text-center [text-shadow:_2px_2px_rgb(0_0_0_/40%)]">
-                    {title}
-                </h3>
+        <>
+            <h3 className="[text-shadow:_2px_2px_rgb(0_0_0_/40%)]">
+                {title}
+            </h3>
+            <div className="flex flex-col h-full items-center justify-center">
+
+                <img src={imageSrc} alt={title} />
             </div>
-            <img src={imageSrc} alt={title} />
-        </div>
+        </>
     );
     return (
         <>
@@ -37,7 +39,7 @@ export default function Naval() {
                     <p className="text-justify max-w-[calc(1000px)]">L’entreprise R2S Composites basée à La Seyne sur Mer (83) est spécialisée dans les réparations composites ainsi que l’entretien de votre bateau grâce a une équipe de professionnels à votre service, nos professionnels vous garantissent des prestations sur-mesure, adaptées à vos besoins ainsi qu’aux caractéristiques de votre bateau.</p>
                 </section>
                 <section className="flex flex-col items-center justify-center h-[calc(400px)] w-[calc(400px)] lg:h-[calc(600px)] lg:w-[calc(600px)] lg:mx-8">
-                    <Carousel slide={false}>
+                    <Carousel theme={CustomFlowbiteReact.galeryCustom} slide={false}>
                         {navalServices.flatMap(service =>
                             service.images.map((image, index) => (
                                 <NavalServiceItem key={`${service.title}-${index}`} imageSrc={image} title={service.title} />

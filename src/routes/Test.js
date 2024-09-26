@@ -1,6 +1,7 @@
 export default function Test() {
     return (
         <main className="flex flex-col items-center justify-center min-h-[calc(100vh-96px)] mt-[calc(96px)]">
+            <div className="h-72"></div>
             <section className="w-[calc(1000px)] bg-black p-2">
                 <div className="group relative w-full transition-all ease-in-out duration-500 hover:duration-1000 h-60 hover:h-96 [clip-path:polygon(0_0,100%_0,100%_80%,0%_100%)] hover:[clip-path:polygon(0_0,100%_0,100%_88%,0%_100%)]">
                     <img src="/expertise/expertise-bateau-reunion.jpeg" alt="hero" className="w-full h-full object-cover blur-sm group-hover:blur-none" />
@@ -52,6 +53,8 @@ export default function Test() {
                     </div>
                 </div>
             </section>
+            <div className="h-72"></div>
+
         </main >
     )
 }

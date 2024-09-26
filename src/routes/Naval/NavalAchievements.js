@@ -4,7 +4,6 @@ import CustomFlowbiteReact from "../../CustomFlowbiteReact.js";
 import Header from '../../composants/Header.js';
 
 export default function NavalAchievements() {
-    const customForm = CustomFlowbiteReact.customForm;
     const [width, setWidth] = useState(window.innerWidth);
 
     useEffect(() => {
@@ -70,7 +69,7 @@ export default function NavalAchievements() {
         <>
             <Header menuTitle="R2S Naval - Réalisations" />
             <main id="main" className="flex items-center justify-center h-[calc(1800px)] min-h-[calc(100vh-184px)] lg:!h-[calc(100vh-184px)] w-full">
-                <Carousel theme={customForm.galeryCustom} slide={false}>
+                <Carousel theme={CustomFlowbiteReact.galeryCustom} slide={false}>
                     {
                         [
                             ["/naval/realisations/chantier-1-1.png", "/naval/realisations/chantier-1-2.png", "/naval/realisations/chantier-1-3.png"],

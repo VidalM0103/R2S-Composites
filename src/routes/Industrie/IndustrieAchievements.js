@@ -4,7 +4,6 @@ import CustomFlowbiteReact from "../../CustomFlowbiteReact.js"
 import Header from "../../composants/Header.js";
 
 export default function IndustrieAchievements() {
-    const customForm = CustomFlowbiteReact.customForm;
     const [width, setWidth] = useState(window.innerWidth);
 
     useEffect(() => {
@@ -70,7 +69,7 @@ export default function IndustrieAchievements() {
         <>
             <Header menuTitle="R2S Industrie - Réalisations" />
             <main id="main" className="flex items-center justify-center h-[calc(1200px)] min-h-[calc(100vh-185px)] lg:!h-[calc(100vh-184px)] w-full">
-                <Carousel theme={customForm.galeryCustom} slide={false}>
+                <Carousel theme={CustomFlowbiteReact.galeryCustom} slide={false}>
                     {
                         [
                             ["/industrie/chantier-1-1.png", "/industrie/chantier-1-2.png"],
