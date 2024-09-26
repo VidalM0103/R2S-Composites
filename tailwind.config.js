@@ -10,6 +10,13 @@ module.exports = {
 
   theme: {
     extend: {
+      transitionProperty: {
+        'height': 'height',
+        'spacing': 'margin, padding',
+      },
+      variants: {
+        height: ['responsive', 'hover', 'focus']
+      },
       animation: {
         fadeInUp: 'fadeInDown 0.5s'
       },

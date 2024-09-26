@@ -17,6 +17,7 @@ import Industrie from './routes/Industrie/Industrie';
 import IndustrieAchievements from './routes/Industrie/IndustrieAchievements';
 import IndustrieDevis from './routes/Industrie/IndustrieDevis';
 import Error from './routes/Error';
+import Test from './routes/Test';
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
       <Routes basename={process.env.PUBLIC_URL}>
         <Route path='*' element={<Error />} />
         <Route index path="/" element={<Home />} />
+        <Route path="/test/" element={<Test />} />
         <Route path="/expertise/" element={<Expertise />} />
         <Route path="/expertise/devis/" element={<ExpertiseDevis />} />
         <Route path="/naval/" element={<Naval />} />
