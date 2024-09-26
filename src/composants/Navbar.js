@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import React from "react";
 
@@ -8,6 +8,7 @@ const Navbar = () => {
             {
                   type: 'dropdown',
                   title: 'R2S Expertise',
+                  path: '/expertise/',
                   items: [
                         { name: 'Présentation', link: '/expertise/' },
                         { name: 'Demander un devis', link: '/expertise/devis/' }
@@ -16,6 +17,7 @@ const Navbar = () => {
             {
                   type: 'dropdown',
                   title: 'R2S Naval',
+                  path: '/naval/',
                   items: [
                         { name: 'Présentation', link: '/naval/' },
                         { name: 'Réalisations', link: '/naval/realisations/' },
@@ -25,6 +27,7 @@ const Navbar = () => {
             {
                   type: 'dropdown',
                   title: 'R2S Piscine',
+                  path: '/piscine/',
                   items: [
                         { name: 'Présentation', link: '/piscine/' },
                         { name: 'Projets', link: '/piscine/realisations/' },
@@ -34,6 +37,7 @@ const Navbar = () => {
             {
                   type: 'dropdown',
                   title: 'R2S Industrie',
+                  path: '/industrie/',
                   items: [
                         { name: 'Présentation', link: '/industrie/' },
                         { name: 'Réalisations', link: '/industrie/realisations/' },
@@ -87,13 +91,17 @@ const Navbar = () => {
                                     <React.Fragment key={item.title}>
                                           {item.type === 'link' ? (
                                                 <li>
-                                                      <Link onClick={closeMenu} to={item.path} className="block p-4 hover:text-primary">
+                                                      <NavLink onClick={closeMenu} to={item.path} className="block p-4 hover:text-primary" reloadDocument style={({ isActive }) => {
+                                                            return {
+                                                                  fontWeight: isActive ? "bold" : ""
+                                                            };
+                                                      }}>
                                                             {item.title}
-                                                      </Link>
+                                                      </NavLink>
                                                 </li>
                                           ) : (
                                                 <li className="group relative inline-block cursor-pointer">
-                                                      <Dropdown ulId={index + 1} menuTitle={item.title} subMenus={item.items} />
+                                                      <Dropdown ulId={index + 1} menuTitle={item.title} path={item.path} subMenus={item.items} />
                                                 </li>
                                           )}
                                           {index < navItems.length - 1 && <hr className="block lg:hidden" />}
