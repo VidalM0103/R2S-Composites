@@ -1,9 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import App from 'src/App';
 import { BrowserRouter } from 'react-router-dom'
+import { hydrateRoot } from 'react-dom/client';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const container = document.getElementById('root');
+const root = hydrateRoot(container, <App tab="home" />);
+
 root.render(
   <BrowserRouter>
     <App />
