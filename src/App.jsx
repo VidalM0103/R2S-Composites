@@ -18,29 +18,33 @@ import IndustrieAchievements from 'src/routes/Industrie/IndustrieAchievements';
 import IndustrieDevis from 'src/routes/Industrie/IndustrieDevis';
 import Error from 'src/routes/Error';
 import Test from 'src/routes/Test';
+import { BrowserRouter } from 'react-router-dom'
+
 
 export default function App() {
   return (
     <>
-      <ScrollToTop />
-      <Navbar />
-      <Routes basename={import.meta.env}>
-        <Route path='*' element={<Error />} />
-        <Route index path="/" element={<Home />} />
-        <Route path="/test/" element={<Test />} />
-        <Route path="/expertise/" element={<Expertise />} />
-        <Route path="/expertise/devis/" element={<ExpertiseDevis />} />
-        <Route path="/naval/" element={<Naval />} />
-        <Route path="/naval/realisations/" element={<NavalAchievements />} />
-        <Route path="/naval/devis/" element={<NavalDevis />} />
-        <Route path="/piscine/" element={<Piscine />} />
-        <Route path="/piscine/realisations/" element={<PiscineAchievements />} />
-        <Route path="/piscine/devis/" element={<PiscineDevis />} />
-        <Route path="/industrie/" element={<Industrie />} />
-        <Route path="/industrie/realisations/" element={<IndustrieAchievements />} />
-        <Route path="/industrie/devis/" element={<IndustrieDevis />} />
-        <Route path="/contact/" element={<Contact />} />
-      </Routes>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Navbar />
+        <Routes basename={import.meta.env}>
+          <Route path='*' element={<Error />} />
+          <Route index path="/" element={<Home />} />
+          <Route path="/test/" element={<Test />} />
+          <Route path="/expertise/" element={<Expertise />} />
+          <Route path="/expertise/devis/" element={<ExpertiseDevis />} />
+          <Route path="/naval/" element={<Naval />} />
+          <Route path="/naval/realisations/" element={<NavalAchievements />} />
+          <Route path="/naval/devis/" element={<NavalDevis />} />
+          <Route path="/piscine/" element={<Piscine />} />
+          <Route path="/piscine/realisations/" element={<PiscineAchievements />} />
+          <Route path="/piscine/devis/" element={<PiscineDevis />} />
+          <Route path="/industrie/" element={<Industrie />} />
+          <Route path="/industrie/realisations/" element={<IndustrieAchievements />} />
+          <Route path="/industrie/devis/" element={<IndustrieDevis />} />
+          <Route path="/contact/" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
