@@ -1,6 +1,7 @@
 import { Carousel } from "flowbite-react"
 import CustomFlowbiteReact from "src/CustomFlowbiteReact"
 import { Helmet } from "react-helmet";
+import Header from 'src/composants/Header';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
