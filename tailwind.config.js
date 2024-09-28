@@ -4,6 +4,7 @@ const flowbite = require("flowbite-react/tailwind");
 
 module.exports = {
   content: [
+    "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
     flowbite.content()
   ],
@@ -38,7 +39,7 @@ module.exports = {
         poppins: ["Poppins", ...defaultTheme.fontFamily.sans]
       },
       backgroundImage: {
-        'hero': "url('/public/landingPage/harbor.jpg')"
+        'hero': "url('/landingPage/harbor.jpg')"
       },
       colors: {
         primary: "#DAA520",

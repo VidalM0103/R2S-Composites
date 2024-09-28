@@ -1,30 +1,30 @@
 import React from 'react';
-import './index.css';
+import 'src/index.css';
 import { Routes, Route } from "react-router-dom";
-import ScrollToTop from './composants/ScrollToTop';
-import Navbar from './composants/Navbar';
-import Home from './routes/Home';
-import Contact from './routes/Contact';
-import Expertise from './routes/Expertise/Expertise';
-import ExpertiseDevis from './routes/Expertise/ExpertiseDevis';
-import Naval from './routes/Naval/Naval';
-import NavalAchievements from './routes/Naval/NavalAchievements';
-import NavalDevis from './routes/Naval/NavalDevis';
-import Piscine from './routes/Piscine/Piscine';
-import PiscineAchievements from './routes/Piscine/PiscineAchievements'
-import PiscineDevis from './routes/Piscine/PiscineDevis';
-import Industrie from './routes/Industrie/Industrie';
-import IndustrieAchievements from './routes/Industrie/IndustrieAchievements';
-import IndustrieDevis from './routes/Industrie/IndustrieDevis';
-import Error from './routes/Error';
-import Test from './routes/Test';
+import ScrollToTop from 'src/composants/ScrollToTop';
+import Navbar from 'src/composants/Navbar';
+import Home from 'src/routes/Home';
+import Contact from 'src/routes/Contact';
+import Expertise from 'src/routes/Expertise/Expertise';
+import ExpertiseDevis from 'src/routes/Expertise/ExpertiseDevis';
+import Naval from 'src/routes/Naval/Naval';
+import NavalAchievements from 'src/routes/Naval/NavalAchievements';
+import NavalDevis from 'src/routes/Naval/NavalDevis';
+import Piscine from 'src/routes/Piscine/Piscine';
+import PiscineAchievements from 'src/routes/Piscine/PiscineAchievements'
+import PiscineDevis from 'src/routes/Piscine/PiscineDevis';
+import Industrie from 'src/routes/Industrie/Industrie';
+import IndustrieAchievements from 'src/routes/Industrie/IndustrieAchievements';
+import IndustrieDevis from 'src/routes/Industrie/IndustrieDevis';
+import Error from 'src/routes/Error';
+import Test from 'src/routes/Test';
 
 export default function App() {
   return (
     <>
       <ScrollToTop />
       <Navbar />
-      <Routes basename={process.env.PUBLIC_URL}>
+      <Routes basename={import.meta.env}>
         <Route path='*' element={<Error />} />
         <Route index path="/" element={<Home />} />
         <Route path="/test/" element={<Test />} />

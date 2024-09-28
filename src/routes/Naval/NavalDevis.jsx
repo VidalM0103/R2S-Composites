@@ -6,8 +6,8 @@ import {
     Textarea,
     TextInput,
 } from "flowbite-react"
-import CustomFlowbiteReact from "../../CustomFlowbiteReact.js"
-import Header from '../../composants/Header.js'
+import CustomFlowbiteReact from "src/CustomFlowbiteReact"
+import Header from 'src/composants/Header'
 import { Helmet } from "react-helmet"
 
 

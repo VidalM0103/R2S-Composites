@@ -1,4 +1,4 @@
-import Header from '../composants/Header';
+import Header from 'src/composants/Header';
 import React from 'react';
 
 export default function Contact() {

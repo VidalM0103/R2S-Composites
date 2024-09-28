@@ -8,8 +8,8 @@ import {
     Select,
     Checkbox
 } from "flowbite-react"
-import CustomFlowbiteReact from "../../CustomFlowbiteReact.js"
-import Header from "../../composants/Header"
+import CustomFlowbiteReact from "src/CustomFlowbiteReact"
+import Header from "src/composants/Header"
 import { Helmet } from "react-helmet"
 
 
