@@ -91,7 +91,7 @@ const Navbar = () => {
                                     <React.Fragment key={item.title}>
                                           {item.type === 'link' ? (
                                                 <li>
-                                                      <NavLink onClick={closeMenu} to={item.path} className="block p-4 hover:text-primary" reloadDocument style={({ isActive }) => {
+                                                      <NavLink onClick={closeMenu} to={item.path} className="block p-4 hover:text-primary" style={({ isActive }) => {
                                                             return {
                                                                   fontWeight: isActive ? "bold" : ""
                                                             };
