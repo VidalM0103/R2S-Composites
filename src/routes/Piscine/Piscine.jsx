@@ -1,5 +1,5 @@
 import Header from "src/composants/Header"
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet-async"
 
 export default function Piscine() {
     const Paragraph = ({ title, children }) => (
@@ -43,12 +43,12 @@ export default function Piscine() {
                     </Paragraph>
                     <Paragraph title="Qu'est ce que l'osmose ?">
                         <p className="mb-4 lg:mb-2">
-                            L'osmose est un phénomène chimique et mécanique qui peut altérer les piscines en polyester, en formant des cloques. En plus du dommage esthétique, l'osmose peut avoir un effet su l'étanchéité du bassin. Le phénomène d'osmose apparait lorsque l'eau passe à travers le Gel-Coat jusque dans les différentes couches de résines polyester. Une réaction chimique se produit entre l'eau et la résine polyester, pour former du liquide acétique. Des cloques s forment sur la coque, contenant ce liquide acétique.
+                            L&apos;osmose est un phénomène chimique et mécanique qui peut altérer les piscines en polyester, en formant des cloques. En plus du dommage esthétique, l&apos;osmose peut avoir un effet su l&apos;étanchéité du bassin. Le phénomène d&apos;osmose apparait lorsque l&apos;eau passe à travers le Gel-Coat jusque dans les différentes couches de résines polyester. Une réaction chimique se produit entre l&apos;eau et la résine polyester, pour former du liquide acétique. Des cloques s forment sur la coque, contenant ce liquide acétique.
                         </p>
                     </Paragraph>
                     <Paragraph title="Réfection Gel-Coat ?">
                         <p className="mb-4 lg:mb-2">
-                            Afin d'éviter ce phénomène et de se retrouver avec des travaux onéreux, nous proposons une réfection complète du Gel-Coat de votre piscine.
+                            Afin d&apos;éviter ce phénomène et de se retrouver avec des travaux onéreux, nous proposons une réfection complète du Gel-Coat de votre piscine.
                         </p>
                     </Paragraph>
                 </section>

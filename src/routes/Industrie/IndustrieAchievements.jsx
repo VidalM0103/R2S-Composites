@@ -2,7 +2,7 @@ import { Carousel } from "flowbite-react"
 import { useEffect, useState } from "react"
 import CustomFlowbiteReact from "src/CustomFlowbiteReact"
 import Header from "src/composants/Header"
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet-async"
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -23,7 +23,7 @@ export default function IndustrieAchievements() {
         const divImg = document.getElementsByClassName('item-photo');
 
         if (width <= 1024) {
-            buttonNext[0].addEventListener("click", (e) => {
+            buttonNext[0].addEventListener("click", () => {
                 let height = 0;
 
                 if (id < divImg.length - 1)
@@ -38,7 +38,7 @@ export default function IndustrieAchievements() {
                 window.scrollTo(0, 0);
             })
 
-            buttonPrev[0].addEventListener("click", (e) => {
+            buttonPrev[0].addEventListener("click", () => {
                 let height = 0;
 
                 if (id > 0)
@@ -53,13 +53,13 @@ export default function IndustrieAchievements() {
                 window.scrollTo(0, 0);
             })
         } else {
-            buttonNext[0].addEventListener("click", (e) => {
+            buttonNext[0].addEventListener("click", () => {
                 if (id < divImg.length - 1)
                     id = id + 1;
                 else
                     id = 0;
             })
-            buttonPrev[0].addEventListener("click", (e) => {
+            buttonPrev[0].addEventListener("click", () => {
                 if (id < divImg.length - 1)
                     id = id + 1;
                 else

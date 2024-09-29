@@ -8,7 +8,7 @@ import {
 } from "flowbite-react"
 import CustomFlowbiteReact from "src/CustomFlowbiteReact"
 import Header from 'src/composants/Header'
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet-async"
 
 
 export default function NavalDevis() {

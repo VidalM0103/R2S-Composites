@@ -1,5 +1,6 @@
 import 'src/index.css';
 import { Routes, Route } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 import ScrollToTop from 'src/composants/ScrollToTop';
 import Navbar from 'src/composants/Navbar';
 import Home from 'src/routes/Home';
@@ -22,25 +23,27 @@ import Test from 'src/routes/Test';
 export default function App() {
   return (
     <>
-      <ScrollToTop />
-      <Navbar />
-      <Routes basename={import.meta.env}>
-        <Route path='*' element={<Error />} />
-        <Route index path="/" element={<Home />} />
-        <Route path="/test/" element={<Test />} />
-        <Route path="/expertise/" element={<Expertise />} />
-        <Route path="/expertise/devis/" element={<ExpertiseDevis />} />
-        <Route path="/naval/" element={<Naval />} />
-        <Route path="/naval/realisations/" element={<NavalAchievements />} />
-        <Route path="/naval/devis/" element={<NavalDevis />} />
-        <Route path="/piscine/" element={<Piscine />} />
-        <Route path="/piscine/realisations/" element={<PiscineAchievements />} />
-        <Route path="/piscine/devis/" element={<PiscineDevis />} />
-        <Route path="/industrie/" element={<Industrie />} />
-        <Route path="/industrie/realisations/" element={<IndustrieAchievements />} />
-        <Route path="/industrie/devis/" element={<IndustrieDevis />} />
-        <Route path="/contact/" element={<Contact />} />
-      </Routes>
+      <HelmetProvider>
+        <ScrollToTop />
+        <Navbar />
+        <Routes basename={import.meta.env}>
+          <Route path='*' element={<Error />} />
+          <Route index path="/" element={<Home />} />
+          <Route path="/test/" element={<Test />} />
+          <Route path="/expertise/" element={<Expertise />} />
+          <Route path="/expertise/devis/" element={<ExpertiseDevis />} />
+          <Route path="/naval/" element={<Naval />} />
+          <Route path="/naval/realisations/" element={<NavalAchievements />} />
+          <Route path="/naval/devis/" element={<NavalDevis />} />
+          <Route path="/piscine/" element={<Piscine />} />
+          <Route path="/piscine/realisations/" element={<PiscineAchievements />} />
+          <Route path="/piscine/devis/" element={<PiscineDevis />} />
+          <Route path="/industrie/" element={<Industrie />} />
+          <Route path="/industrie/realisations/" element={<IndustrieAchievements />} />
+          <Route path="/industrie/devis/" element={<IndustrieDevis />} />
+          <Route path="/contact/" element={<Contact />} />
+        </Routes>
+      </HelmetProvider>
     </>
   );
 }
