@@ -5,6 +5,7 @@ import tailwindcss from 'tailwindcss';
 export default defineConfig(() => {
   return {
     base: '/',
+    logLevel: 'silent',
     resolve: {
       alias: {
         src: "/src",
