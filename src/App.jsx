@@ -1,4 +1,3 @@
-import React from 'react';
 import 'src/index.css';
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from 'src/composants/ScrollToTop';

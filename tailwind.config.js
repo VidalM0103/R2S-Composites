@@ -1,8 +1,8 @@
-/** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
-const flowbite = require("flowbite-react/tailwind");
+import defaultTheme from "tailwindcss/defaultTheme";
+import flowbite from "flowbite-react/tailwind";
 
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: [
     "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -21,7 +21,7 @@ module.exports = {
       animation: {
         fadeInUp: 'fadeInDown 0.5s'
       },
-      keyframes: theme => ({
+      keyframes: () => ({
         fadeInDown: {
           "0%": {
             opacity: 0
@@ -53,5 +53,4 @@ module.exports = {
     flowbite.plugin()
   ],
 }
-
 
