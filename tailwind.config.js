@@ -1,4 +1,3 @@
-import defaultTheme from "tailwindcss/defaultTheme";
 import flowbite from "flowbite-react/tailwind";
 
 /** @type {import('tailwindcss').Config} */
@@ -36,7 +35,7 @@ export default {
         md: '0 2px 4px var(--tw-shadow-color)',
       },
       fontFamily: {
-        poppins: ["Poppins", ...defaultTheme.fontFamily.sans]
+        poppins: ["Poppins"],
       },
       backgroundImage: {
         'hero': "url('/landingPage/harbor.jpg')"
