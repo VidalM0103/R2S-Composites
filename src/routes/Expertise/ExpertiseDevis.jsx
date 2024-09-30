@@ -9,6 +9,7 @@ import {
 import CustomFlowbiteReact from "src/CustomFlowbiteReact";
 import Header from "src/composants/Header";
 import { Helmet } from "react-helmet-async";
+import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 
 export default function ExpertiseDevis() {
@@ -28,25 +29,17 @@ export default function ExpertiseDevis() {
         { id: 'expertise', label: 'Expertise demandée', type: 'text' },
     ];
 
-    const renderFormField = (field) => (
-        <div key={field.id}>
-            <div className="block mb-2">
-                <Label theme={customForm.labelCustom} htmlFor={field.id} value={field.label} />
-            </div>
-            <TextInput
-                theme={customForm.textInputCustom}
-                color="primary"
-                id={field.id}
-                type={field.type}
-                name={field.label}
-                required={field.required}
-            />
-        </div>
-    );
-
     const onSubmit = async (event) => {
+        const form = document.getElementById('form');
         event.preventDefault();
         setResult("Envoi du devis en cours....");
+        const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+        if (!hCaptcha) {
+            event.preventDefault();
+            setResult("Veuillez renseigner le captcha en amont.");
+            return;
+        }
         const forlgata = new FormData(event.target);
 
         forlgata.append("access_key", "75b8bbf1-eec3-40e9-85fa-3fc8b53aead9");
@@ -71,6 +64,22 @@ export default function ExpertiseDevis() {
         setValueMeterShip([4, parseInt(event.target.value)]);
     }
 
+    const renderFormField = (field) => (
+        <div key={field.id}>
+            <div className="block mb-2">
+                <Label theme={customForm.labelCustom} htmlFor={field.id} value={field.label} />
+            </div>
+            <TextInput
+                theme={customForm.textInputCustom}
+                color="primary"
+                id={field.id}
+                type={field.type}
+                name={field.label}
+                required={field.required}
+            />
+        </div>
+    );
+
     return (
         <>
             <Helmet>
@@ -86,7 +95,7 @@ export default function ExpertiseDevis() {
             </Helmet>
             <Header menuTitle="R2S Expertise - Devis" />
             <main className="flex flex-col justify-around items-center min-h-[calc(100vh-184px)] p-4 lg:p-8">
-                <form className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-4/5 lg:w-2/3" onSubmit={onSubmit}>
+                <form id="form" className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-4/5 lg:w-2/3" onSubmit={onSubmit}>
                     {formFields.map(renderFormField)}
                     <div className='mb-4'>
                         <div className="mb-2 block">
@@ -127,12 +136,17 @@ export default function ExpertiseDevis() {
                         </div>
                         <Textarea theme={customForm.textAreaInputCustom} color="primary" id="message" name="Message" rows={4} />
                     </div>
+                    <div className="lg:col-span-2 flex items-center justify-center">
+                        <HCaptcha
+                            sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
+                            reCaptchaCompat={false}
+                        />
+                    </div>
                     <div className="flex flex-col items-center lg:col-span-2 text-center p-4">
                         <button type="submit" className="w-60 btn-primary">Demander un devis</button>
                         <span className="text-white mt-2">{result}</span>
                     </div>
                 </form>
-
             </main>
         </>
     );
